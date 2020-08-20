@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "animearsenal",
+    "name": "Anime Arsenal",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [],
+    "credits": "yor42",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
