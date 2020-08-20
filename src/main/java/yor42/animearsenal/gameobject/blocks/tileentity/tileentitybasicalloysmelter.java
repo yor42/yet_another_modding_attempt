@@ -31,7 +31,6 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
     //0,1 = input, 2= fuel, 3 = output
     private ItemStackHandler handler = new ItemStackHandler(4);
     private String customName;
-    private ItemStack smelting = ItemStack.EMPTY;
 
     private int burnTime;
     private int currentBurnTime;
@@ -41,8 +40,7 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
     @Override
     public boolean hasCapability(Capability<?> capability, EnumFacing facing)
     {
-        if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
-        else return false;
+        return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY;
     }
 
     @Override
@@ -76,7 +74,7 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
         this.burnTime = compound.getInteger("BurnTime");
         this.cookTime = compound.getInteger("CookTime");
         this.totalCookTime = compound.getInteger("CookTimeTotal");
-        this.currentBurnTime = getItemBurnTime((ItemStack)this.handler.getStackInSlot(2));
+        this.currentBurnTime = getItemBurnTime(this.handler.getStackInSlot(2));
 
         if(compound.hasKey("CustomName", 8)) this.setCustomName(compound.getString("CustomName"));
     }
@@ -94,11 +92,6 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
         return compound;
     }
 
-    public boolean isBurning()
-    {
-        return this.burnTime > 0;
-    }
-
     @SideOnly(Side.CLIENT)
     public static boolean isBurning(tileentitybasicalloysmelter te)
     {
@@ -107,10 +100,10 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
 
     public void update()
     {
-        boolean flag = this.isBurning();
+        boolean flag = isBurning(this);
         boolean flag1 = false;
 
-        if (this.isBurning())
+        if (isBurning(this))
         {
             --this.burnTime;
         }
@@ -119,14 +112,14 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
         {
             ItemStack fuelstack = this.handler.getStackInSlot(2);
 
-            if (this.isBurning() || !fuelstack.isEmpty() && !handler.getStackInSlot(0).isEmpty() && !handler.getStackInSlot(1).isEmpty())
+            if (isBurning(this) || !fuelstack.isEmpty() && !handler.getStackInSlot(0).isEmpty() && !handler.getStackInSlot(1).isEmpty())
             {
-                if (!this.isBurning() && this.canSmelt())
+                if (!isBurning(this))
                 {
                     this.burnTime = getItemBurnTime(fuelstack);
                     this.currentBurnTime = this.burnTime;
 
-                    if (this.isBurning())
+                    if (isBurning(this))
                     {
                         flag1 = true;
 
@@ -144,14 +137,15 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
                     }
                 }
 
-                if (this.isBurning() && this.canSmelt())
+                if (isBurning(this) && this.canSmelt())
+                    //causes issue that processing stops when player takes out result item
+                    //cansmelt() is the source of issue
                 {
                     ++this.cookTime;
 
-                    if (this.cookTime == this.totalCookTime)
+                    if (this.cookTime == 200)
                     {
                         this.cookTime = 0;
-                        this.totalCookTime = 1600;
                         processitem();
                         flag1 = true;
                     }
@@ -161,15 +155,15 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
                     this.cookTime = 0;
                 }
             }
-            else if (!this.isBurning() && this.cookTime > 0)
+            else if (!isBurning(this) && this.cookTime > 0)
             {
                 this.cookTime = MathHelper.clamp(this.cookTime - 2, 0, this.totalCookTime);
             }
 
-            if (flag != this.isBurning())
+            if (flag != isBurning(this))
             {
                 flag1 = true;
-                BlockFurnace.setState(this.isBurning(), this.world, this.pos);
+                basicalloysmelter.setState(isBurning(this), this.world, this.pos);
             }
         }
 
@@ -188,8 +182,6 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
             ItemStack result = AlloyRecipe.getInstance().getalloyingResult(input1, input2);
             ItemStack itemstack2 = handler.getStackInSlot(3);
 
-            input1.shrink(1);
-            input2.shrink(1);
 
             if (itemstack2.isEmpty())
             {
@@ -197,25 +189,50 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
             }
             else if (itemstack2.getItem() == result.getItem())
             {
-                itemstack2.grow(result.getCount());
+                itemstack2.grow(1);
             }
+
+            input1.shrink(1);
+            input2.shrink(1);
         }
     }
 
     private boolean canSmelt()
     {
-        if(((ItemStack)this.handler.getStackInSlot(0)).isEmpty() || ((ItemStack)this.handler.getStackInSlot(1)).isEmpty()) return false;
+        ItemStack input1 = handler.getStackInSlot(0);
+        ItemStack input2 = handler.getStackInSlot(1);
+        if (input1.isEmpty() || input2.isEmpty())
+        {
+            return false;
+        }
         else
         {
-            ItemStack result = AlloyRecipe.getInstance().getalloyingResult((ItemStack)this.handler.getStackInSlot(0), (ItemStack)this.handler.getStackInSlot(1));
-            if(result.isEmpty()) return false;
+            ItemStack output = AlloyRecipe.getInstance().getalloyingResult(input1, input2);
+
+            if (output.isEmpty())
+            {
+                return false;
+            }
             else
             {
-                ItemStack output = (ItemStack)this.handler.getStackInSlot(3);
-                if(output.isEmpty()) return true;
-                if(!output.isItemEqual(result)) return false;
-                int res = output.getCount() + result.getCount();
-                return res <= 64 && res <= output.getMaxStackSize();
+                ItemStack outputslotstack = this.handler.getStackInSlot(3);
+
+                if (outputslotstack.isEmpty())
+                {
+                    return true;
+                }
+                else if (!outputslotstack.isItemEqual(output))
+                {
+                    return false;
+                }
+                else if (outputslotstack.getCount() + output.getCount() <= output.getMaxStackSize() && outputslotstack.getCount() + output.getCount() <= outputslotstack.getMaxStackSize())  // Forge fix: make furnace respect stack sizes in furnace recipes
+                {
+                    return true;
+                }
+                else
+                {
+                    return outputslotstack.getCount() + output.getCount() <= output.getMaxStackSize(); // Forge fix: make furnace respect stack sizes in furnace recipes
+                }
             }
         }
     }

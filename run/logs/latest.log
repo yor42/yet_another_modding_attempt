@@ -1,94 +1,94 @@
-[21:20:43] [main/INFO] [GradleStart]: Extra: []
-[21:20:43] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/yoonc/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[21:20:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:20:43] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:20:43] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:20:43] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[21:20:43] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
-[21:20:43] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_221, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_221\jre
-[21:20:43] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[21:20:43] [main/ERROR] [FML]: Full: C:\Users\yoonc\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[21:20:43] [main/ERROR] [FML]: Trimmed: c:/users/yoonc/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[21:20:43] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[21:20:43] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[21:20:44] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[21:20:44] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[21:20:44] [main/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
-[21:20:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[21:20:44] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[21:20:44] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[21:20:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:20:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:20:44] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:20:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:20:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[21:20:44] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:20:45] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[21:20:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[21:20:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[21:20:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[21:20:45] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:20:45] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[21:20:45] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[21:20:45] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player817
-[21:20:47] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[21:20:47] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[21:20:48] [Client thread/INFO] [FML]: -- System Details --
+[02:12:49] [main/INFO] [GradleStart]: Extra: []
+[02:12:49] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/yoonc/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[02:12:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[02:12:49] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
+[02:12:49] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_221, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_221\jre
+[02:12:49] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[02:12:49] [main/ERROR] [FML]: Full: C:\Users\yoonc\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[02:12:49] [main/ERROR] [FML]: Trimmed: c:/users/yoonc/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[02:12:49] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[02:12:49] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[02:12:49] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[02:12:49] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[02:12:49] [main/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
+[02:12:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[02:12:49] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[02:12:49] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[02:12:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[02:12:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[02:12:50] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[02:12:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[02:12:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[02:12:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[02:12:50] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[02:12:50] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[02:12:50] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[02:12:50] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player73
+[02:12:52] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[02:12:52] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[02:12:53] [Client thread/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_221, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 817863120 bytes (779 MB) / 998768640 bytes (952 MB) up to 15256256512 bytes (14549 MB)
+	Memory: 754612400 bytes (719 MB) / 987758592 bytes (942 MB) up to 15256256512 bytes (14549 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 445.87' Renderer: 'GeForce RTX 2080 Ti/PCIe/SSE2'
-[21:20:48] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
-[21:20:48] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[21:20:48] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
-[21:20:48] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
-[21:20:48] [Client thread/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
-[21:20:49] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
-[21:20:49] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at CLIENT
-[21:20:49] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at SERVER
-[21:20:49] [Client thread/ERROR] [FML]: The mod redstoneflux is expecting signature 8a6abf2cb9e141b866580d369ba6548732eff25f for source RedstoneFlux-1.12-2.1.0.7-deobf.jar, however there is no signature matching that description
-[21:20:49] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Anime Collection, FMLFileResourcePack:Redstone Flux, FMLFileResourcePack:Anime Arsenal
-[21:20:49] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[21:20:49] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
-[21:20:49] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[21:20:49] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[21:20:49] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[21:20:49] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[21:20:50] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `basic_alloy_smelter`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
-[21:20:50] [Client thread/INFO] [FML]: Applying holder lookups
-[21:20:50] [Client thread/INFO] [FML]: Holder lookups applied
-[21:20:50] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 24946100 nanos
-[21:20:50] [Client thread/INFO] [FML]: Applying holder lookups
-[21:20:50] [Client thread/INFO] [FML]: Holder lookups applied
-[21:20:50] [Client thread/INFO] [STDOUT]: [truefantasy.animcolle.init.EntityInit$RegistrationHandler:registerEntities:126]: Registering entities
-[21:20:50] [Client thread/INFO] [FML]: Applying holder lookups
-[21:20:50] [Client thread/INFO] [FML]: Holder lookups applied
-[21:20:50] [Client thread/INFO] [FML]: Applying holder lookups
-[21:20:50] [Client thread/INFO] [FML]: Holder lookups applied
-[21:20:50] [Client thread/INFO] [FML]: Injecting itemstacks
-[21:20:50] [Client thread/INFO] [FML]: Itemstack injection complete
-[21:20:50] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2854
-[21:20:53] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[21:20:53] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[21:20:53] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:20:53] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[21:20:53] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[21:20:57] [Client thread/INFO] [FML]: Max texture size: 16384
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnmashu.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/exucard.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnenterprise.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnyae.png with size 89x89 will have visual artifacts at mip level 4, it can only support level 0. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnexusiai.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/foxmask.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[21:20:57] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x512 textures-atlas
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:testblock#normal for blockstate "animearsenal:testblock"
+[02:12:53] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
+[02:12:53] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[02:12:53] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[02:12:53] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[02:12:53] [Client thread/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
+[02:12:54] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
+[02:12:54] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at CLIENT
+[02:12:54] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at SERVER
+[02:12:55] [Client thread/ERROR] [FML]: The mod redstoneflux is expecting signature 8a6abf2cb9e141b866580d369ba6548732eff25f for source RedstoneFlux-1.12-2.1.0.7-deobf.jar, however there is no signature matching that description
+[02:12:55] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Anime Collection, FMLFileResourcePack:Redstone Flux, FMLFileResourcePack:Anime Arsenal
+[02:12:55] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[02:12:55] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[02:12:55] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[02:12:55] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[02:12:55] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[02:12:55] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[02:12:55] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 108173600 nanos
+[02:12:55] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `basic_alloy_smelter`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
+[02:12:55] [Client thread/INFO] [FML]: Applying holder lookups
+[02:12:55] [Client thread/INFO] [FML]: Holder lookups applied
+[02:12:55] [Client thread/INFO] [FML]: Applying holder lookups
+[02:12:55] [Client thread/INFO] [FML]: Holder lookups applied
+[02:12:55] [Client thread/INFO] [STDOUT]: [truefantasy.animcolle.init.EntityInit$RegistrationHandler:registerEntities:126]: Registering entities
+[02:12:55] [Client thread/INFO] [FML]: Applying holder lookups
+[02:12:55] [Client thread/INFO] [FML]: Holder lookups applied
+[02:12:55] [Client thread/INFO] [FML]: Applying holder lookups
+[02:12:55] [Client thread/INFO] [FML]: Holder lookups applied
+[02:12:55] [Client thread/INFO] [FML]: Injecting itemstacks
+[02:12:55] [Client thread/INFO] [FML]: Itemstack injection complete
+[02:12:55] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2854
+[02:12:58] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[02:12:59] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[02:12:59] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:12:59] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[02:12:59] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[02:13:03] [Client thread/INFO] [FML]: Max texture size: 16384
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnmashu.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/exucard.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnenterprise.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnyae.png with size 89x89 will have visual artifacts at mip level 4, it can only support level 0. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnexusiai.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/foxmask.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[02:13:03] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x512 textures-atlas
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:testblock#normal for blockstate "animearsenal:testblock"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:testblock#normal with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
@@ -117,7 +117,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:testblock#normal: 
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:testblock#normal: 
 java.lang.Exception: Could not load model definition for variant animearsenal:testblock
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
@@ -152,7 +152,7 @@ Caused by: java.io.FileNotFoundException: animearsenal:blockstates/testblock.jso
 	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
 	... 20 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", normal location exception: 
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", normal location exception: 
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:item/manganese_ingot with loader VanillaLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
@@ -183,7 +183,7 @@ Caused by: java.io.FileNotFoundException: animearsenal:models/item/manganese_ing
 	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 20 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", blockstate location exception: 
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", blockstate location exception: 
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:manganese_ingot#inventory with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
@@ -211,7 +211,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 20 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=east for blockstate "animearsenal:basicalloysmelter[burning=true,facing=east]"
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=east for blockstate "animearsenal:basicalloysmelter[burning=true,facing=east]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:basicalloysmelter#burning=true,facing=east with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
@@ -240,7 +240,7 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:basicalloysmelter#burning=true,facing=east: 
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:basicalloysmelter#burning=true,facing=east: 
 java.lang.Exception: Could not load model definition for variant animearsenal:basicalloysmelter
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
 	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
@@ -275,7 +275,7 @@ Caused by: java.io.FileNotFoundException: animearsenal:blockstates/basicalloysme
 	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
 	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
 	... 20 more
-[21:20:58] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=south for blockstate "animearsenal:basicalloysmelter[burning=true,facing=south]"
+[02:13:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=south for blockstate "animearsenal:basicalloysmelter[burning=true,facing=south]"
 net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:basicalloysmelter#burning=true,facing=south with loader VariantLoader.INSTANCE, skipping
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
 	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
@@ -304,8 +304,8 @@ Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$Missin
 	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
 	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
 	... 21 more
-[21:20:58] [Client thread/FATAL] [FML]: Suppressed additional 9 model loading errors for domain animearsenal
-[21:20:58] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/whitemuffler
+[02:13:03] [Client thread/FATAL] [FML]: Suppressed additional 9 model loading errors for domain animearsenal
+[02:13:04] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/whitemuffler
 com.google.gson.JsonParseException: Missing data for item 'minecraft:coal'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:265) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:544) ~[CraftingHelper.class:?]
@@ -334,7 +334,7 @@ com.google.gson.JsonParseException: Missing data for item 'minecraft:coal'
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[21:20:58] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/atagoribbon
+[02:13:04] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/atagoribbon
 com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same width
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:499) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:416) ~[CraftingHelper.class:?]
@@ -360,185 +360,44 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[21:20:58] [Client thread/INFO] [FML]: Applying holder lookups
-[21:20:58] [Client thread/INFO] [FML]: Holder lookups applied
-[21:20:59] [Client thread/INFO] [FML]: Injecting itemstacks
-[21:20:59] [Client thread/INFO] [FML]: Itemstack injection complete
-[21:20:59] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
-[21:20:59] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[21:20:59] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
-[21:21:00] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[21:21:26] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[21:21:26] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[21:21:26] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[21:21:27] [Server thread/INFO] [FML]: Applying holder lookups
-[21:21:27] [Server thread/INFO] [FML]: Holder lookups applied
-[21:21:27] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@473951bf)
-[21:21:27] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[21:21:27] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@473951bf)
-[21:21:27] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@473951bf)
-[21:21:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[21:21:28] [Server thread/INFO] [FML]: Unloading dimension -1
-[21:21:28] [Server thread/INFO] [FML]: Unloading dimension 1
-[21:21:28] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[21:21:29] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[21:21:29] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[21:21:29] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,FML@8.0.99.99,animearsenal@2020.8-0.1.0,forge@14.23.5.2847,redstoneflux@2.1.0,mcp@9.42,animcolle@1.0.0b3
-[21:21:29] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[21:21:29] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[21:21:29] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player817[local:E:14d00102] logged in with entity id 297 at (-215.30000001192093, 70.0, 458.03091136000586)
-[21:21:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player817 joined the game
-[21:21:31] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[21:21:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[21:21:33] [Server thread/FATAL] [net.minecraft.server.MinecraftServer]: Error executing task
-java.util.concurrent.ExecutionException: java.lang.ClassCastException: yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter cannot be cast to net.minecraft.inventory.IInventory
-	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_221]
-	at java.util.concurrent.FutureTask.get(FutureTask.java:192) ~[?:1.8.0_221]
-	at net.minecraft.util.Util.runTask(Util.java:54) [Util.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:798) [MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743) [MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) [IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-Caused by: java.lang.ClassCastException: yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter cannot be cast to net.minecraft.inventory.IInventory
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154) ~[basicalloysmelter.class:?]
-	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615) ~[Chunk.class:?]
-	at net.minecraft.world.World.setBlockState(World.java:401) ~[World.class:?]
-	at net.minecraft.block.Block.removedByPlayer(Block.java:1422) ~[Block.class:?]
-	at net.minecraft.server.management.PlayerInteractionManager.removeBlock(PlayerInteractionManager.java:294) ~[PlayerInteractionManager.class:?]
-	at net.minecraft.server.management.PlayerInteractionManager.removeBlock(PlayerInteractionManager.java:288) ~[PlayerInteractionManager.class:?]
-	at net.minecraft.server.management.PlayerInteractionManager.tryHarvestBlock(PlayerInteractionManager.java:335) ~[PlayerInteractionManager.class:?]
-	at net.minecraft.server.management.PlayerInteractionManager.onBlockClicked(PlayerInteractionManager.java:171) ~[PlayerInteractionManager.class:?]
-	at net.minecraft.network.NetHandlerPlayServer.processPlayerDigging(NetHandlerPlayServer.java:721) ~[NetHandlerPlayServer.class:?]
-	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:56) ~[CPacketPlayerDigging.class:?]
-	at net.minecraft.network.play.client.CPacketPlayerDigging.processPacket(CPacketPlayerDigging.java:12) ~[CPacketPlayerDigging.class:?]
-	at net.minecraft.network.PacketThreadUtil$1.run(PacketThreadUtil.java:21) ~[PacketThreadUtil$1.class:?]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) ~[?:1.8.0_221]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_221]
-	at net.minecraft.util.Util.runTask(Util.java:53) ~[Util.class:?]
-	... 5 more
-[21:21:57] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
-[21:22:01] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: Encountered an unexpected exception
-net.minecraft.util.ReportedException: Ticking block entity
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:848) ~[MinecraftServer.class:?]
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743) ~[MinecraftServer.class:?]
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192) ~[IntegratedServer.class:?]
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592) [MinecraftServer.class:?]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-Caused by: java.lang.ClassCastException: yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter cannot be cast to net.minecraft.inventory.IInventory
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154) ~[basicalloysmelter.class:?]
-	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615) ~[Chunk.class:?]
-	at net.minecraft.world.World.setBlockState(World.java:401) ~[World.class:?]
-	at net.minecraft.block.BlockFurnace.setState(BlockFurnace.java:162) ~[BlockFurnace.class:?]
-	at yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter.update(tileentitybasicalloysmelter.java:172) ~[tileentitybasicalloysmelter.class:?]
-	at net.minecraft.world.World.updateEntities(World.java:2010) ~[World.class:?]
-	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643) ~[WorldServer.class:?]
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842) ~[MinecraftServer.class:?]
-	... 4 more
-[21:22:01] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: This crash report has been saved to: C:\Eclipse Workspaces\animearsenal2\run\.\crash-reports\crash-2020-08-20_21.22.01-server.txt
-[21:22:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[21:22:01] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: ---- Minecraft Crash Report ----
-// Don't be sad, have a hug! <3
-
-Time: 8/20/20 9:22 PM
-Description: Ticking block entity
-
-java.lang.ClassCastException: yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter cannot be cast to net.minecraft.inventory.IInventory
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154)
-	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615)
-	at net.minecraft.world.World.setBlockState(World.java:401)
-	at net.minecraft.block.BlockFurnace.setState(BlockFurnace.java:162)
-	at yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter.update(tileentitybasicalloysmelter.java:172)
-	at net.minecraft.world.World.updateEntities(World.java:2010)
-	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
-	at java.lang.Thread.run(Thread.java:748)
-
-
-A detailed walkthrough of the error, its code path and all known details is as follows:
----------------------------------------------------------------------------------------
-
--- Head --
-Thread: Client thread
-Stacktrace:
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154)
-	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615)
-	at net.minecraft.world.World.setBlockState(World.java:401)
-	at net.minecraft.block.BlockFurnace.setState(BlockFurnace.java:162)
-	at yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter.update(tileentitybasicalloysmelter.java:172)
-
--- Block entity being ticked --
-Details:
-	Name: minecraft:basic_alloy_smelter // yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter
-	Block type: ID #62 (tile.furnace // net.minecraft.block.BlockFurnace // minecraft:lit_furnace)
-	Block data value: 4 / 0x4 / 0b0100
-	Block location: World: (-214,70,458), Chunk: (at 10,4,10 in -14,28; contains blocks -224,0,448 to -209,255,463), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
-	Actual block type: ID #62 (tile.furnace // net.minecraft.block.BlockFurnace // minecraft:lit_furnace)
-	Actual block data value: 4 / 0x4 / 0b0100
-Stacktrace:
-	at net.minecraft.world.World.updateEntities(World.java:2010)
-	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:643)
-
--- Affected level --
-Details:
-	Level name: New World
-	All players: 1 total; [EntityPlayerMP['Player817'/297, l='New World', x=-215.24, y=70.00, z=457.95]]
-	Chunk stats: ServerChunkCache: 786 Drop: 0
-	Level seed: -2952369637869947325
-	Level generator: ID 00 - default, ver 1. Features enabled: true
-	Level generator options: 
-	Level spawn location: World: (-248,64,248), Chunk: (at 8,4,8 in -16,15; contains blocks -256,0,240 to -241,255,255), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
-	Level time: 144258 game time, 144258 day time
-	Level dimension: 0
-	Level storage version: 0x04ABD - Anvil
-	Level weather: Rain time: 49813 (now: false), thunder time: 123288 (now: false)
-	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
-Stacktrace:
-	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:842)
-	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:743)
-	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:192)
-	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:592)
-	at java.lang.Thread.run(Thread.java:748)
-
--- System Details --
-Details:
-	Minecraft Version: 1.12.2
-	Operating System: Windows 10 (amd64) version 10.0
-	Java Version: 1.8.0_221, Oracle Corporation
-	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 1482660088 bytes (1413 MB) / 2060451840 bytes (1965 MB) up to 15256256512 bytes (14549 MB)
-	JVM Flags: 0 total; 
-	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
-	FML: MCP 9.42 Powered by Forge 14.23.5.2847 7 mods loaded, 7 mods active
-	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
-
-	| State  | ID           | Version      | Source                              | Signature |
-	|:------ |:------------ |:------------ |:----------------------------------- |:--------- |
-	| LCHIJA | minecraft    | 1.12.2       | minecraft.jar                       | None      |
-	| LCHIJA | mcp          | 9.42         | minecraft.jar                       | None      |
-	| LCHIJA | FML          | 8.0.99.99    | forgeSrc-1.12.2-14.23.5.2847.jar    | None      |
-	| LCHIJA | forge        | 14.23.5.2847 | forgeSrc-1.12.2-14.23.5.2847.jar    | None      |
-	| LCHIJA | animcolle    | 1.0.0b3      | anime-collection-2960128.jar        | None      |
-	| LCHIJA | redstoneflux | 2.1.0        | RedstoneFlux-1.12-2.1.0.7-deobf.jar | None      |
-	| LCHIJA | animearsenal | 2020.8-0.1.0 | animearsenal-1.0.jar                | None      |
-
-	Loaded coremods (and transformers): 
-	GL info: ~~ERROR~~ RuntimeException: No OpenGL context found in the current thread.
-	Profiler Position: N/A (disabled)
-	Player Count: 1 / 8; [EntityPlayerMP['Player817'/297, l='New World', x=-215.24, y=70.00, z=457.95]]
-	Type: Integrated Server (map_client.txt)
-	Is Modded: Definitely; Client brand changed to 'fml,forge'
-[21:22:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[21:22:01] [Client thread/INFO] [STDOUT]: [net.minecraft.init.Bootstrap:printToSYSOUT:629]: #@!@# Game crashed! Crash report saved to: #@!@# .\crash-reports\crash-2020-08-20_21.22.01-server.txt
-[21:22:01] [Client thread/INFO] [FML]: Waiting for the server to terminate/save.
-[21:22:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[21:22:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[21:22:01] [Server thread/INFO] [FML]: Unloading dimension 0
-[21:22:01] [Server thread/INFO] [FML]: Applying holder lookups
-[21:22:01] [Server thread/INFO] [FML]: Holder lookups applied
-[21:22:01] [Server thread/INFO] [FML]: The state engine was in incorrect state SERVER_STOPPING and forced into state SERVER_STOPPED. Errors may have been discarded.
-[21:22:01] [Client thread/INFO] [FML]: Server terminated.
-[21:22:01] [Client Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[02:13:04] [Client thread/INFO] [FML]: Applying holder lookups
+[02:13:04] [Client thread/INFO] [FML]: Holder lookups applied
+[02:13:04] [Client thread/INFO] [FML]: Injecting itemstacks
+[02:13:04] [Client thread/INFO] [FML]: Itemstack injection complete
+[02:13:04] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
+[02:13:04] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[02:13:04] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[02:13:05] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[02:13:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[02:13:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[02:13:16] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[02:13:17] [Server thread/INFO] [FML]: Applying holder lookups
+[02:13:17] [Server thread/INFO] [FML]: Holder lookups applied
+[02:13:17] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@20921661)
+[02:13:17] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[02:13:17] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@20921661)
+[02:13:17] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@20921661)
+[02:13:17] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[02:13:18] [Server thread/INFO] [FML]: Unloading dimension -1
+[02:13:18] [Server thread/INFO] [FML]: Unloading dimension 1
+[02:13:18] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[02:13:20] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[02:13:20] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[02:13:20] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,FML@8.0.99.99,animearsenal@2020.8-0.1.0,forge@14.23.5.2847,redstoneflux@2.1.0,mcp@9.42,animcolle@1.0.0b3
+[02:13:20] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[02:13:20] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[02:13:20] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player73[local:E:6e90aba3] logged in with entity id 297 at (-178.42628774479508, 70.0, 446.6701799528258)
+[02:13:20] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player73 joined the game
+[02:13:21] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[02:13:21] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[02:13:21] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 2 advancements
+[02:13:47] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[02:13:47] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[02:13:47] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[02:13:47] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[02:13:47] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[02:13:48] [Server thread/INFO] [FML]: Unloading dimension 0
+[02:13:48] [Server thread/INFO] [FML]: Applying holder lookups
+[02:13:48] [Server thread/INFO] [FML]: Holder lookups applied
+[02:13:48] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[02:13:48] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
