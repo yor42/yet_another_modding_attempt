@@ -150,7 +150,7 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
                         flag1 = true;
                     }
                 }
-                else
+                else if(handler.getStackInSlot(0) == ItemStack.EMPTY || handler.getStackInSlot(0) == ItemStack.EMPTY )
                 {
                     this.cookTime = 0;
                 }

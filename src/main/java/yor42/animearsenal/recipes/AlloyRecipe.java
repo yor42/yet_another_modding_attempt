@@ -21,15 +21,15 @@ public class AlloyRecipe {
 
     private AlloyRecipe()
     {
-        addalloyingRecipe(new ItemStack(iteminit.RMA_70_24_INGOT), new ItemStack(iteminit.MANGANESE_INGOT), new ItemStack(iteminit.D32_STEEL_INGOT), 5.0F);
+        addalloyingRecipe(new ItemStack(iteminit.RMA_70_24_INGOT), new ItemStack(iteminit.MANGANESE_INGOT), new ItemStack(iteminit.D32_STEEL_INGOT));
     }
 
 
-    public void addalloyingRecipe(ItemStack input1, ItemStack input2, ItemStack result, float experience)
+    public void addalloyingRecipe(ItemStack input1, ItemStack input2, ItemStack result)
     {
         if(getalloyingResult(input1, input2) != ItemStack.EMPTY) return;
         this.smeltingList.put(input1, input2, result);
-        this.experienceList.put(result, Float.valueOf(experience));
+        this.smeltingList.put(input2, input1, result);
     }
 
     public ItemStack getalloyingResult(ItemStack input1, ItemStack input2)
