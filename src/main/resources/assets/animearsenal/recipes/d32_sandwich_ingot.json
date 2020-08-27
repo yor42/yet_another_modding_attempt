@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "MMM",
+    "RRR",
+    "MMM"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "animearsenal:RMA70_24_ingot"
+    },
+    "M":
+    {
+      "item": "animearsenal:manganese_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "animearsenal:rma7024_manganese_sandwich",
+    "count": 1
+  }
+}

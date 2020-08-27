@@ -29,12 +29,11 @@ import yor42.animearsenal.util.reference;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class basicalloysmelter extends blockBase implements ITileEntityProvider {
-
+public class blockBasicAlloySmelter extends blockBase implements ITileEntityProvider {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
 
-    public basicalloysmelter(String name) {
+    public blockBasicAlloySmelter(String name) {
         super(name, Material.ROCK, CreativeTabs.DECORATIONS);
 
         this.setDefaultState(this.getDefaultState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
@@ -87,8 +86,8 @@ public class basicalloysmelter extends blockBase implements ITileEntityProvider 
         IBlockState state = worldIn.getBlockState(pos);
         TileEntity tileentity = worldIn.getTileEntity(pos);
 
-        //if(active) worldIn.setBlockState(pos, BlockInit.SINTERING_FURNACE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
-        //else worldIn.setBlockState(pos, BlockInit.SINTERING_FURNACE.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
+        if(active) worldIn.setBlockState(pos, blockinit.ALLOY_SMELTER_BASIC.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, true), 3);
+        else worldIn.setBlockState(pos, blockinit.ALLOY_SMELTER_BASIC.getDefaultState().withProperty(FACING, state.getValue(FACING)).withProperty(BURNING, false), 3);
 
         if(tileentity != null)
         {

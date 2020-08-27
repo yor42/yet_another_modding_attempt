@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SMC",
+    "S C",
+    "SMC"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "animearsenal:carbonfiber"
+    },
+    "M":
+    {
+      "item": "animearsenal:manganese_ingot"
+    },
+    "S":
+    {
+      "item": "minecraft:string"
+    }
+  },
+
+  "result":
+  {
+    "item": "animearsenal:compoundbow",
+    "count": 1
+  }
+}

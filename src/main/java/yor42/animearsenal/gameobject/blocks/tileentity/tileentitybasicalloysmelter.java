@@ -1,13 +1,11 @@
 package yor42.animearsenal.gameobject.blocks.tileentity;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.*;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
@@ -24,7 +22,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
-import yor42.animearsenal.gameobject.blocks.basicalloysmelter;
+import yor42.animearsenal.gameobject.blocks.blockBasicAlloySmelter;
 import yor42.animearsenal.recipes.AlloyRecipe;
 
 public class tileentitybasicalloysmelter extends TileEntity implements ITickable {
@@ -150,7 +148,7 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
                         flag1 = true;
                     }
                 }
-                else if(handler.getStackInSlot(0) == ItemStack.EMPTY || handler.getStackInSlot(0) == ItemStack.EMPTY )
+                else
                 {
                     this.cookTime = 0;
                 }
@@ -163,7 +161,7 @@ public class tileentitybasicalloysmelter extends TileEntity implements ITickable
             if (flag != isBurning(this))
             {
                 flag1 = true;
-                basicalloysmelter.setState(isBurning(this), this.world, this.pos);
+                blockBasicAlloySmelter.setState(isBurning(this), this.world, this.pos);
             }
         }
 

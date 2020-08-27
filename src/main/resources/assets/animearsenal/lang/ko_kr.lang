@@ -31,8 +31,8 @@ item.chixiao.tooltip=Name literally means red sword. yes. literally.
 item.originiumsword.name=Originium Sword
 item.originiumsword.tooltip=Blade is made out of pure originium. that doesn't sound healthy isn't it? yeah. I wouldn't touch that part if i were you.
 
-item.m7024railgun.name=SF-7024 Man-Portable Railgun System
-item.m7024railgun.tooltip=I'MMA FIRIN' MAH LAZAH- wait, this is railgun!
+item.m7024railgun.name=M7024 휴대용 레일건 시스템
+item.m7024railgun.tooltip=굳이 전차를 몰고가지 않아도 머리통을 날려 드립니다.
 
 #container
 container.basic_alloy_smelter=Basic Alloy Smelter

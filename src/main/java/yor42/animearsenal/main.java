@@ -1,7 +1,9 @@
 package yor42.animearsenal;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -11,10 +13,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.registries.IForgeRegistry;
+import truefantasy.animcolle.util.Reference;
+import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
 import yor42.animearsenal.handler.guiHandler;
-import yor42.animearsenal.init.blockinit;
-import yor42.animearsenal.init.iteminit;
+import yor42.animearsenal.init.*;
 import yor42.animearsenal.proxy.commonProxy;
 import yor42.animearsenal.registry.tileentityRegistry;
 import yor42.animearsenal.util.reference;
@@ -46,7 +52,7 @@ public class main {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-
+        initEntityRender.RegisterEntityRender();
     }
 
     /**
@@ -55,6 +61,7 @@ public class main {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
     NetworkRegistry.INSTANCE.registerGuiHandler(main.INSTANCE, new guiHandler());
+        recipeInit.initializeFurnaceRecipes();
     }
 
     /**
