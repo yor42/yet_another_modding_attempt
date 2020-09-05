@@ -192,6 +192,13 @@ public class gflRailgun extends itembase {
     }
 
     @Override
+    public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
+        super.onCreated(stack, worldIn, playerIn);
+        setMaxAmmo(stack, 5);
+        addAmmo(stack, 5);
+    }
+
+    @Override
     public ActionResult onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
