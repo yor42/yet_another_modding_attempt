@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "MMM",
+    "RRR",
+    "MLM"
+  ],
+
+  "key":
+  {
+    "R":
+    {
+      "item": "minecraft:redstone"
+    },
+    "M":
+    {
+      "item": "animearsenal:manganese_ingot"
+    },
+    "L":
+    {
+      "item": "minecraft:lever"
+    }
+  },
+
+  "result":
+  {
+    "item": "animearsenal:railgun",
+    "count": 1
+  }
+}

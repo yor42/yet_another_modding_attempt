@@ -25,8 +25,9 @@ public class gflRailgun extends itembase {
     public gflRailgun(String name){
         super(name, Main.animcolleweapon);
         this.maxStackSize = 1;
-        this.magMaxCapacity = 5;
-        this.magContents = 5;
+
+        this.setMaxAmmo(new ItemStack(this), 5);
+        this.addAmmo(new ItemStack(this), 5);
 
         this.addPropertyOverride(new ResourceLocation("open"), new IItemPropertyGetter()
         {
@@ -199,39 +200,40 @@ public class gflRailgun extends itembase {
     }
 
     @Override
+    public boolean showDurabilityBar(ItemStack stack) {
+        return true;
+    }
+
+    @Override
     public ActionResult onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
         boolean isTheresAmmo = !this.findAmmo(playerIn).isEmpty();
+        int remainingAmmoInInv = findAmmo(playerIn).getCount();
 
         ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, isTheresAmmo);
         if (ret != null) return ret;
 
-        if ((!playerIn.capabilities.isCreativeMode && !isTheresAmmo)|| this.magContents == 0)
+        if ((!playerIn.capabilities.isCreativeMode && !isTheresAmmo) && this.isMagEmpty(itemstack))
         {
-            return isTheresAmmo ? new ActionResult<>(EnumActionResult.PASS, itemstack) : new ActionResult<>(EnumActionResult.FAIL, itemstack);
+            return new ActionResult<>(EnumActionResult.FAIL, itemstack);
         }
         else if (this.isMagEmpty(itemstack) && isTheresAmmo && !playerIn.capabilities.isCreativeMode){
-            int spareammo = this.findAmmo(playerIn).getCount();
 
-            ItemStack stack = playerIn.getHeldItem(handIn);
-
-            if (spareammo > this.getMaxAmmo(stack)){
-                spareammo = this.getMaxAmmo(stack);
+            if (remainingAmmoInInv > this.getMaxAmmo(itemstack)){
+                remainingAmmoInInv = this.getMaxAmmo(itemstack);
             }
 
-            this.addAmmo(stack, spareammo);
-            itemstack.shrink(spareammo);
+            this.addAmmo(itemstack, remainingAmmoInInv);
+            itemstack.shrink(remainingAmmoInInv);
 
-            playerIn.getCooldownTracker().setCooldown(this, 20);
+            playerIn.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
-        else if(playerIn.capabilities.isCreativeMode || !isMagEmpty(itemstack))
-        {
+        else {
             playerIn.setActiveHand(handIn);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
-        return new ActionResult<>(EnumActionResult.FAIL, itemstack);
     }
 
     @Override
@@ -254,7 +256,6 @@ public class gflRailgun extends itembase {
 
                 if ((double)charge >= 1.0D)
                 {
-                    boolean flag1 = entityplayer.capabilities.isCreativeMode;
 
                     if (!worldIn.isRemote)
                     {
@@ -265,8 +266,10 @@ public class gflRailgun extends itembase {
                         EntityArrow entityarrow = itemarrow.createArrow(worldIn, itemstack, entityplayer);
                         entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, charge * 3.0F, 1.0F);
 
+                        if (!isPlayerCreative) {
+                            this.useAmmo(stack);
+                        }
                         worldIn.spawnEntity(entityarrow);
-                        this.useAmmo(stack);
                     }
 
                     //To be replaced with custom soundevent.
