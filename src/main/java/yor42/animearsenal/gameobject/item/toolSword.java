@@ -21,6 +21,10 @@ public class toolSword extends ItemSword {
         iteminit.ITEMS.add(this);
     }
 
+    public boolean showDurabilityBar(ItemStack stack) {
+        return true;
+    }
+
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         tooltip.add(new TextComponentTranslation(this.getUnlocalizedName()+".tooltip").getFormattedText());

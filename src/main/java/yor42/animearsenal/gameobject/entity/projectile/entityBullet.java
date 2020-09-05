@@ -18,11 +18,13 @@ public class entityBullet extends EntityThrowable {
         super(worldIn);
     }
 
-    public entityBullet(World worldIn, EntityLivingBase shooterIn, double x, double y, double z, String calibur) {
-        super(worldIn);
-        this.setPosition(x, y, z);
-        this.thrower = shooterIn;
-        bulletCalibur = calibur;
+    public entityBullet(World worldIn, EntityLivingBase shooterIn) {
+        super(worldIn, shooterIn);
+    }
+
+    public entityBullet(World worldIn, double x, double y, double z) {
+        super(worldIn, x,y,z);
+        //bulletCalibur = calibur;
     }
 
     public float getDamageFromCalibur(String calibur){

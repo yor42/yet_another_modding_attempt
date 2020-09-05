@@ -41,6 +41,10 @@ public class toolShield extends Item {
         BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(this, ItemArmor.DISPENSER_BEHAVIOR);
     }
 
+    public boolean showDurabilityBar(ItemStack stack) {
+        return true;
+    }
+
     public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.BLOCK;
     }

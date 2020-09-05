@@ -11,7 +11,5 @@ import java.util.List;
 
 public class blockinit {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
-
-    public static final Block TEST_BLOCK = new blockBase("testblock", Material.ROCK, CreativeTabs.BUILDING_BLOCKS);
     public static final Block ALLOY_SMELTER_BASIC = new blockBasicAlloySmelter("basicalloysmelter");
 }

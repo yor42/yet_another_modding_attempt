@@ -5,7 +5,7 @@ Time: 8/20/20 9:22 PM
 Description: Ticking block entity
 
 java.lang.ClassCastException: yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter cannot be cast to net.minecraft.inventory.IInventory
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154)
+	at yor42.animearsenal.gameobject.blocks.blockBasicAlloySmelter.breakBlock(basicalloysmelter.java:154)
 	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615)
 	at net.minecraft.world.World.setBlockState(World.java:401)
 	at net.minecraft.block.BlockFurnace.setState(BlockFurnace.java:162)
@@ -25,7 +25,7 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Server thread
 Stacktrace:
-	at yor42.animearsenal.gameobject.blocks.basicalloysmelter.breakBlock(basicalloysmelter.java:154)
+	at yor42.animearsenal.gameobject.blocks.blockBasicAlloySmelter.breakBlock(basicalloysmelter.java:154)
 	at net.minecraft.world.chunk.Chunk.setBlockState(Chunk.java:615)
 	at net.minecraft.world.World.setBlockState(World.java:401)
 	at net.minecraft.block.BlockFurnace.setState(BlockFurnace.java:162)

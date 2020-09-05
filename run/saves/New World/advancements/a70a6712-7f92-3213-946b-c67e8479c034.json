@@ -1,0 +1,20 @@
+{
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_at_least_9_coal": "2020-08-22 23:19:08 +0900"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "desert": "2020-08-22 23:19:08 +0900"
+    },
+    "done": false
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2020-08-22 23:19:08 +0900"
+    },
+    "done": true
+  }
+}

@@ -3,11 +3,14 @@ package yor42.animearsenal.init;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
+import scala.xml.PrettyPrinter;
 import truefantasy.animcolle.Main;
 import yor42.animearsenal.gameobject.item.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static truefantasy.animcolle.Main.animcolleweapon;
 
 public class iteminit {
 
@@ -25,6 +28,7 @@ public class iteminit {
 
     public static final Item CARBON_FIBER = new itembase("carbonfiber", CreativeTabs.MATERIALS);
 
+    public static final Item RAILGUN_AMMO = new itembase("railgun_shell", animcolleweapon);
 
     public static final Item.ToolMaterial MEGUMIN_WEAPON = EnumHelper.addToolMaterial("megumin_weapon", 0, 15000, 2.0F, 24.0F, 40);
     public static final Item.ToolMaterial YAE_EQUIP = EnumHelper.addToolMaterial("yae_equip", 0, 15350, 3.0F, 24.0F, 20);
@@ -38,8 +42,9 @@ public class iteminit {
     public static final Item SAKURA_BLOSSOM = new toolSword("sakurablossom", YAE_EQUIP);
     public static final Item SHIELD_LORDCHALDEAS = new toolShield("lordchaldeas", CreativeTabs.COMBAT, 1200);
     public static final Item MEGU_STAFF = new toolSword("megustaff", MEGUMIN_WEAPON);
-    public static final Item CV6_BOW = new compoundBow("compoundbow").setMaxDamage(1000);
+    public static final Item CV6_BOW = new compoundBow("compoundbow");
     public static final Item CHIXIAO = new toolSword("chixiao", CHEN_EQUIP);
     public static final Item ORIGINIUM_SWORD = new toolSword("originiumsword", TEXAS_EQUIP);
+    public static final Item SF6024 = new gflRailgun("railgun");
 
 }

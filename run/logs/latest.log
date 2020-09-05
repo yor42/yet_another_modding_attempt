@@ -1,311 +1,96 @@
-[11:25:47] [main/INFO] [GradleStart]: Extra: []
-[11:25:47] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/yoonc/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[11:25:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:25:47] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:25:47] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[11:25:47] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:25:47] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
-[11:25:47] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_221, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_221\jre
-[11:25:47] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[11:25:47] [main/ERROR] [FML]: Full: C:\Users\yoonc\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
-[11:25:47] [main/ERROR] [FML]: Trimmed: c:/users/yoonc/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
-[11:25:47] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[11:25:47] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
-[11:25:48] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[11:25:48] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[11:25:48] [main/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
-[11:25:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[11:25:48] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[11:25:48] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[11:25:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:25:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[11:25:48] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[11:25:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:25:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:25:48] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[11:25:49] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[11:25:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[11:25:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[11:25:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[11:25:49] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[11:25:49] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[11:25:49] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[11:25:49] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player938
-[11:25:51] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[11:25:51] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
-[11:25:52] [Client thread/INFO] [FML]: -- System Details --
+[18:53:55] [main/INFO] [GradleStart]: Extra: []
+[18:53:55] [main/INFO] [GradleStart]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/yoonc/.gradle/caches/minecraft/assets, --assetIndex, 1.12, --accessToken{REDACTED}, --version, 1.12.2, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[18:53:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[18:53:55] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2847 for Minecraft 1.12.2 loading
+[18:53:55] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_221, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jdk1.8.0_221\jre
+[18:53:55] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[18:53:55] [main/ERROR] [FML]: Full: C:\Users\yoonc\.gradle\caches\modules-2\files-2.1\org.apache.maven\maven-artifact\3.5.3\7dc72b6d6d8a6dced3d294ed54c2cc3515ade9f4\maven-artifact-3.5.3.jar
+[18:53:55] [main/ERROR] [FML]: Trimmed: c:/users/yoonc/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.5.3/
+[18:53:55] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[18:53:55] [main/INFO] [FML]: Detected deobfuscated environment, loading log configs for colored console logs.
+[18:53:55] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[18:53:55] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[18:53:55] [main/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
+[18:53:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[18:53:55] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[18:53:55] [main/INFO] [GradleStart]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[18:53:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[18:53:55] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[18:53:56] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[18:53:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[18:53:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[18:53:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[18:53:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[18:53:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[18:53:56] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[18:53:56] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: Player131
+[18:53:58] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[18:53:58] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[18:53:59] [Client thread/INFO] [FML]: -- System Details --
 Details:
 	Minecraft Version: 1.12.2
 	Operating System: Windows 10 (amd64) version 10.0
 	Java Version: 1.8.0_221, Oracle Corporation
 	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-	Memory: 769092880 bytes (733 MB) / 994050048 bytes (948 MB) up to 15256256512 bytes (14549 MB)
+	Memory: 757231504 bytes (722 MB) / 990380032 bytes (944 MB) up to 15256256512 bytes (14549 MB)
 	JVM Flags: 0 total; 
 	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
 	FML: 
 	Loaded coremods (and transformers): 
 	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.6.0 NVIDIA 445.87' Renderer: 'GeForce RTX 2080 Ti/PCIe/SSE2'
-[11:25:52] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
-[11:25:52] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
-[11:25:52] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
-[11:25:52] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
-[11:25:52] [Client thread/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
-[11:25:53] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
-[11:25:53] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at CLIENT
-[11:25:53] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at SERVER
-[11:25:53] [Client thread/ERROR] [FML]: The mod redstoneflux is expecting signature 8a6abf2cb9e141b866580d369ba6548732eff25f for source RedstoneFlux-1.12-2.1.0.7-deobf.jar, however there is no signature matching that description
-[11:25:53] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Anime Collection, FMLFileResourcePack:Redstone Flux, FMLFileResourcePack:Anime Arsenal
-[11:25:53] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
-[11:25:54] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
-[11:25:54] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
-[11:25:54] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
-[11:25:54] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
-[11:25:54] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[11:25:54] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `basic_alloy_smelter`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
-[11:25:54] [Client thread/INFO] [FML]: Applying holder lookups
-[11:25:54] [Client thread/INFO] [FML]: Holder lookups applied
-[11:25:54] [Client thread/INFO] [FML]: Applying holder lookups
-[11:25:54] [Client thread/INFO] [FML]: Holder lookups applied
-[11:25:54] [Client thread/INFO] [STDOUT]: [truefantasy.animcolle.init.EntityInit$RegistrationHandler:registerEntities:126]: Registering entities
-[11:25:54] [Client thread/INFO] [FML]: Applying holder lookups
-[11:25:54] [Client thread/INFO] [FML]: Holder lookups applied
-[11:25:54] [Client thread/INFO] [FML]: Applying holder lookups
-[11:25:54] [Client thread/INFO] [FML]: Holder lookups applied
-[11:25:54] [Client thread/INFO] [FML]: Injecting itemstacks
-[11:25:54] [Client thread/INFO] [FML]: Itemstack injection complete
-[11:25:54] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2854
-[11:25:54] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 110998007 nanos
-[11:25:57] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
-[11:25:57] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
-[11:25:57] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:25:58] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
-[11:25:58] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
-[11:26:02] [Client thread/INFO] [FML]: Max texture size: 16384
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnmashu.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/exucard.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnenterprise.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnyae.png with size 89x89 will have visual artifacts at mip level 4, it can only support level 0. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnexusiai.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/foxmask.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
-[11:26:02] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x512 textures-atlas
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:testblock#normal for blockstate "animearsenal:testblock"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:testblock#normal with loader VariantLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
-	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 21 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:testblock#normal: 
-java.lang.Exception: Could not load model definition for variant animearsenal:testblock
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: java.lang.RuntimeException: Encountered an exception when loading model definition of model animearsenal:blockstates/testblock.json
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:228) ~[ModelBakery.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
-	... 20 more
-Caused by: java.io.FileNotFoundException: animearsenal:blockstates/testblock.json
-	at net.minecraft.client.resources.FallbackResourceManager.getAllResources(FallbackResourceManager.java:104) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getAllResources(SimpleReloadableResourceManager.java:79) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:221) ~[ModelBakery.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
-	... 20 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", normal location exception: 
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:item/manganese_ingot with loader VanillaLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:302) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: java.io.FileNotFoundException: animearsenal:models/item/manganese_ingot.json
-	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:69) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:65) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadModel(ModelBakery.java:334) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.access$1400(ModelLoader.java:115) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VanillaLoader.loadModel(ModelLoader.java:861) ~[ModelLoader$VanillaLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 20 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:manganese_ingot#inventory for item "animearsenal:manganese_ingot", blockstate location exception: 
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:manganese_ingot#inventory with loader VariantLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadItemModels(ModelLoader.java:296) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadVariantItemModels(ModelBakery.java:175) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:151) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
-	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 20 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=east for blockstate "animearsenal:basicalloysmelter[burning=true,facing=east]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:basicalloysmelter#burning=true,facing=east with loader VariantLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
-	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 21 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading blockstate for the variant animearsenal:basicalloysmelter#burning=true,facing=east: 
-java.lang.Exception: Could not load model definition for variant animearsenal:basicalloysmelter
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:269) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:121) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: java.lang.RuntimeException: Encountered an exception when loading model definition of model animearsenal:blockstates/basicalloysmelter.json
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:228) ~[ModelBakery.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
-	... 20 more
-Caused by: java.io.FileNotFoundException: animearsenal:blockstates/basicalloysmelter.json
-	at net.minecraft.client.resources.FallbackResourceManager.getAllResources(FallbackResourceManager.java:104) ~[FallbackResourceManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.getAllResources(SimpleReloadableResourceManager.java:79) ~[SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadMultipartMBD(ModelBakery.java:221) ~[ModelBakery.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.getModelBlockDefinition(ModelBakery.java:208) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.getModelBlockDefinition(ModelLoader.java:265) ~[ModelLoader.class:?]
-	... 20 more
-[11:26:03] [Client thread/ERROR] [FML]: Exception loading model for variant animearsenal:basicalloysmelter#burning=true,facing=south for blockstate "animearsenal:basicalloysmelter[burning=true,facing=south]"
-net.minecraftforge.client.model.ModelLoaderRegistry$LoaderException: Exception loading model animearsenal:basicalloysmelter#burning=true,facing=south with loader VariantLoader.INSTANCE, skipping
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:161) ~[ModelLoaderRegistry.class:?]
-	at net.minecraftforge.client.model.ModelLoader.registerVariant(ModelLoader.java:235) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelBakery.loadBlock(ModelBakery.java:153) ~[ModelBakery.class:?]
-	at net.minecraftforge.client.model.ModelLoader.loadBlocks(ModelLoader.java:223) ~[ModelLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoader.setupModelRegistry(ModelLoader.java:150) ~[ModelLoader.class:?]
-	at net.minecraft.client.renderer.block.model.ModelManager.onResourceManagerReload(ModelManager.java:28) [ModelManager.class:?]
-	at net.minecraft.client.resources.SimpleReloadableResourceManager.registerReloadListener(SimpleReloadableResourceManager.java:121) [SimpleReloadableResourceManager.class:?]
-	at net.minecraft.client.Minecraft.init(Minecraft.java:560) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:422) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:118) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
-	at GradleStart.main(GradleStart.java:25) [start/:?]
-Caused by: net.minecraft.client.renderer.block.model.ModelBlockDefinition$MissingVariantException
-	at net.minecraft.client.renderer.block.model.ModelBlockDefinition.getVariant(ModelBlockDefinition.java:83) ~[ModelBlockDefinition.class:?]
-	at net.minecraftforge.client.model.ModelLoader$VariantLoader.loadModel(ModelLoader.java:1175) ~[ModelLoader$VariantLoader.class:?]
-	at net.minecraftforge.client.model.ModelLoaderRegistry.getModel(ModelLoaderRegistry.java:157) ~[ModelLoaderRegistry.class:?]
-	... 21 more
-[11:26:03] [Client thread/FATAL] [FML]: Suppressed additional 9 model loading errors for domain animearsenal
-[11:26:03] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/whitemuffler
+[18:53:59] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2847 Initialized
+[18:53:59] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[18:53:59] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[18:53:59] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[18:53:59] [Client thread/INFO] [FML]: Searching C:\Eclipse Workspaces\animearsenal2\run\.\mods for mods
+[18:54:00] [Client thread/INFO] [FML]: Forge Mod Loader has identified 7 mods to load
+[18:54:00] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at CLIENT
+[18:54:00] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge, animcolle, redstoneflux, animearsenal] at SERVER
+[18:54:00] [Client thread/ERROR] [FML]: The mod redstoneflux is expecting signature 8a6abf2cb9e141b866580d369ba6548732eff25f for source RedstoneFlux-1.12-2.1.0.7-deobf.jar, however there is no signature matching that description
+[18:54:00] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Anime Collection, FMLFileResourcePack:Redstone Flux, FMLFileResourcePack:Anime Arsenal
+[18:54:00] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[18:54:00] [Client thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[18:54:00] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[18:54:00] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[18:54:01] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[18:54:01] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[18:54:01] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 278453100 nanos
+[18:54:01] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `minecraft` for name `basic_alloy_smelter`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
+[18:54:01] [Client thread/INFO] [FML]: Applying holder lookups
+[18:54:01] [Client thread/INFO] [FML]: Holder lookups applied
+[18:54:01] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: OUTDATED Target: 14.23.5.2854
+[18:54:02] [Client thread/INFO] [FML]: Applying holder lookups
+[18:54:02] [Client thread/INFO] [FML]: Holder lookups applied
+[18:54:02] [Client thread/INFO] [STDOUT]: [truefantasy.animcolle.init.EntityInit$RegistrationHandler:registerEntities:126]: Registering entities
+[18:54:02] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `animcolle` for name `bullet`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
+[18:54:02] [Client thread/WARN] [FML]: Potentially Dangerous alternative prefix `animcolle` for name `plasmaarrow`, expected `animearsenal`. This could be a intended override, but in most cases indicates a broken mod.
+[18:54:02] [Client thread/INFO] [FML]: Applying holder lookups
+[18:54:02] [Client thread/INFO] [FML]: Holder lookups applied
+[18:54:02] [Client thread/INFO] [FML]: Applying holder lookups
+[18:54:02] [Client thread/INFO] [FML]: Holder lookups applied
+[18:54:02] [Client thread/INFO] [FML]: Injecting itemstacks
+[18:54:02] [Client thread/INFO] [FML]: Itemstack injection complete
+[18:54:04] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[18:54:04] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[18:54:04] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:54:05] [Thread-5/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[18:54:05] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[18:54:08] [Client thread/INFO] [FML]: Max texture size: 16384
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnmashu.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/exucard.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnenterprise.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnyae.png with size 89x89 will have visual artifacts at mip level 4, it can only support level 0. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/spawn/spawnexusiai.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/WARN] [net.minecraft.client.renderer.texture.TextureMap]: Texture animcolle:textures/items/misc/foxmask.png with size 24x24 will have visual artifacts at mip level 4, it can only support level 3. Please report to the mod author that the texture should be some multiple of 16x16.
+[18:54:08] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x512 textures-atlas
+[18:54:09] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/whitemuffler
 com.google.gson.JsonParseException: Missing data for item 'minecraft:coal'
 	at net.minecraftforge.common.crafting.CraftingHelper.getItemStackBasic(CraftingHelper.java:265) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$16(CraftingHelper.java:544) ~[CraftingHelper.class:?]
@@ -334,7 +119,7 @@ com.google.gson.JsonParseException: Missing data for item 'minecraft:coal'
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[11:26:03] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/atagoribbon
+[18:54:09] [Client thread/ERROR] [FML]: Parsing error loading recipe animcolle:keyitem/atagoribbon
 com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same width
 	at net.minecraftforge.common.crafting.CraftingHelper.lambda$init$14(CraftingHelper.java:499) ~[CraftingHelper.class:?]
 	at net.minecraftforge.common.crafting.CraftingHelper.getRecipe(CraftingHelper.java:416) ~[CraftingHelper.class:?]
@@ -360,46 +145,53 @@ com.google.gson.JsonSyntaxException: Invalid pattern: each row must be the same 
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
 	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
 	at GradleStart.main(GradleStart.java:25) [start/:?]
-[11:26:03] [Client thread/INFO] [FML]: Applying holder lookups
-[11:26:03] [Client thread/INFO] [FML]: Holder lookups applied
-[11:26:03] [Client thread/INFO] [FML]: Injecting itemstacks
-[11:26:03] [Client thread/INFO] [FML]: Itemstack injection complete
-[11:26:04] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
-[11:26:04] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
-[11:26:04] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
-[11:26:05] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
-[11:27:06] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
-[11:27:06] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
-[11:27:06] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
-[11:27:06] [Server thread/INFO] [FML]: Applying holder lookups
-[11:27:06] [Server thread/INFO] [FML]: Holder lookups applied
-[11:27:07] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@4fcd0cb)
-[11:27:07] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
-[11:27:07] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@4fcd0cb)
-[11:27:07] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@4fcd0cb)
-[11:27:07] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
-[11:27:08] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 79%
-[11:27:08] [Server thread/INFO] [FML]: Unloading dimension -1
-[11:27:08] [Server thread/INFO] [FML]: Unloading dimension 1
-[11:27:08] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
-[11:27:10] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
-[11:27:10] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
-[11:27:10] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,FML@8.0.99.99,animearsenal@2020.8-0.1.0,forge@14.23.5.2847,redstoneflux@2.1.0,mcp@9.42,animcolle@1.0.0b3
-[11:27:10] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
-[11:27:10] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
-[11:27:10] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player938[local:E:dac156c6] logged in with entity id 251 at (-202.0656689719588, 71.37631454238033, 451.2979319007747)
-[11:27:10] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player938 joined the game
-[11:27:11] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[11:27:11] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[11:27:12] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
-[11:27:12] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[11:27:31] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
-[11:27:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
-[11:27:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
-[11:27:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
-[11:27:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
-[11:27:31] [Server thread/INFO] [FML]: Unloading dimension 0
-[11:27:31] [Server thread/INFO] [FML]: Applying holder lookups
-[11:27:31] [Server thread/INFO] [FML]: Holder lookups applied
-[11:27:31] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
-[11:27:31] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
+[18:54:09] [Client thread/INFO] [FML]: Applying holder lookups
+[18:54:09] [Client thread/INFO] [FML]: Holder lookups applied
+[18:54:09] [Client thread/INFO] [FML]: Injecting itemstacks
+[18:54:09] [Client thread/INFO] [FML]: Itemstack injection complete
+[18:54:10] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 7 mods
+[18:54:10] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[18:54:10] [Client thread/INFO] [com.mojang.text2speech.NarratorWindows]: Narrator library for x64 successfully loaded
+[18:54:11] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient]: Could not authorize you against Realms server: Invalid session id
+[18:54:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Starting integrated minecraft server version 1.12.2
+[18:54:14] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Generating keypair
+[18:54:14] [Server thread/INFO] [FML]: Injecting existing registry data into this server instance
+[18:54:14] [Server thread/INFO] [FML]: Registry Block: Found a missing id from the world animearsenal:testblock
+[18:54:14] [Server thread/INFO] [FML]: Applying holder lookups
+[18:54:14] [Server thread/INFO] [FML]: Holder lookups applied
+[18:54:14] [Server thread/INFO] [FML]: Loading dimension 0 (New World) (net.minecraft.server.integrated.IntegratedServer@689f7690)
+[18:54:14] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[18:54:14] [Server thread/INFO] [FML]: Loading dimension -1 (New World) (net.minecraft.server.integrated.IntegratedServer@689f7690)
+[18:54:14] [Server thread/INFO] [FML]: Loading dimension 1 (New World) (net.minecraft.server.integrated.IntegratedServer@689f7690)
+[18:54:15] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0
+[18:54:16] [Server thread/INFO] [FML]: Unloading dimension -1
+[18:54:16] [Server thread/INFO] [FML]: Unloading dimension 1
+[18:54:16] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Changing view distance to 12, from 10
+[18:54:18] [Netty Local Client IO #0/INFO] [FML]: Server protocol version 2
+[18:54:18] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[18:54:18] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 7 mods : minecraft@1.12.2,FML@8.0.99.99,animearsenal@2020.8-0.1.0,forge@14.23.5.2847,redstoneflux@2.1.0,mcp@9.42,animcolle@1.0.0b3
+[18:54:18] [Netty Local Client IO #0/INFO] [FML]: [Netty Local Client IO #0] Client side modded connection established
+[18:54:18] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[18:54:18] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Player131[local:E:656517be] logged in with entity id 242 at (350.2224107046514, 69.87920224849319, 194.54327836076084)
+[18:54:18] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player131 joined the game
+[18:54:19] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[18:54:19] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[18:54:19] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 9 advancements
+[18:54:19] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[18:54:19] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[18:54:47] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 23569ms behind, skipping 471 tick(s)
+[18:55:29] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer]: Saving and pausing game...
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[18:55:29] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Player131 lost connection: Disconnected
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Player131 left the game
+[18:55:29] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Stopping singleplayer server as player logged out
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[18:55:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'New World'/overworld
+[18:55:29] [Server thread/INFO] [FML]: Unloading dimension 0
+[18:55:29] [Server thread/INFO] [FML]: Applying holder lookups
+[18:55:29] [Server thread/INFO] [FML]: Holder lookups applied
+[18:56:46] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[18:56:46] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[18:56:46] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com

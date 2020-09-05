@@ -17,7 +17,7 @@ public class modelEntityBullet extends ModelBase {
 
 		bb_main = new ModelRenderer(this);
 		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -0.5F, -0.5F, -1.0F, 1, 1, 2, 0.0F, false));
+		bb_main.cubeList.add(new ModelBox(bb_main, 0, 0, -0.5F, -22.1F, -1.0F, 1, 1, 2, 0.0F, false));
 	}
 
 	@Override
