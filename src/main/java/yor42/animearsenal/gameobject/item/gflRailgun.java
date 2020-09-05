@@ -7,7 +7,6 @@ import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.stats.StatList;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -188,7 +187,7 @@ public class gflRailgun extends itembase {
         return currentCount;
     };
 
-    public boolean isMagEnpty(ItemStack stack){
+    public boolean isMagEmpty(ItemStack stack){
         return getAmmoCount(stack) == 0;
     }
 
@@ -196,17 +195,17 @@ public class gflRailgun extends itembase {
     public ActionResult onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        boolean flag = !this.findAmmo(playerIn).isEmpty();
+        boolean isTheresAmmo = !this.findAmmo(playerIn).isEmpty();
 
-        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, flag);
+        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, isTheresAmmo);
         if (ret != null) return ret;
 
-        if ((!playerIn.capabilities.isCreativeMode && !flag)|| this.magContents == 0)
+        if ((!playerIn.capabilities.isCreativeMode && !isTheresAmmo)|| this.magContents == 0)
         {
-            return flag ? new ActionResult<>(EnumActionResult.PASS, itemstack) : new ActionResult<>(EnumActionResult.FAIL, itemstack);
+            return isTheresAmmo ? new ActionResult<>(EnumActionResult.PASS, itemstack) : new ActionResult<>(EnumActionResult.FAIL, itemstack);
         }
-        else if (this.isMagEnpty(itemstack) && flag && !playerIn.capabilities.isCreativeMode){
-            int spareammo = itemstack.getCount();
+        else if (this.isMagEmpty(itemstack) && isTheresAmmo && !playerIn.capabilities.isCreativeMode){
+            int spareammo = this.findAmmo(playerIn).getCount();
 
             ItemStack stack = playerIn.getHeldItem(handIn);
 
@@ -217,9 +216,10 @@ public class gflRailgun extends itembase {
             this.addAmmo(stack, spareammo);
             itemstack.shrink(spareammo);
 
-            playerIn.getCooldownTracker().setCooldown(this, 20*spareammo);
+            playerIn.getCooldownTracker().setCooldown(this, 20);
+            return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
-        else
+        else if(playerIn.capabilities.isCreativeMode || !isMagEmpty(itemstack))
         {
             playerIn.setActiveHand(handIn);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
@@ -237,21 +237,17 @@ public class gflRailgun extends itembase {
             ItemStack itemstack = this.findAmmo(entityplayer);
 
             int i = this.getMaxItemUseDuration(stack) - timeLeft;
-            i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, !itemstack.isEmpty() || isPlayerCreative);
+            i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, !this.isMagEmpty(stack) || isPlayerCreative);
             if (i < 0) return;
 
-            if (!itemstack.isEmpty() || isPlayerCreative)
+            if (!this.isMagEmpty(stack) || isPlayerCreative)
             {
-                if (itemstack.isEmpty())
-                {
-                    itemstack = new ItemStack(Items.ARROW);
-                }
 
                 float charge = getCharge(i);
 
                 if ((double)charge >= 1.0D)
                 {
-                    boolean flag1 = entityplayer.capabilities.isCreativeMode || (itemstack.getItem() instanceof ItemArrow && ((ItemArrow) itemstack.getItem()).isInfinite(itemstack, stack, entityplayer));
+                    boolean flag1 = entityplayer.capabilities.isCreativeMode;
 
                     if (!worldIn.isRemote)
                     {
@@ -266,17 +262,8 @@ public class gflRailgun extends itembase {
                         this.useAmmo(stack);
                     }
 
+                    //To be replaced with custom soundevent.
                     worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + charge * 0.5F);
-
-                    if (!flag1 && !entityplayer.capabilities.isCreativeMode)
-                    {
-                        itemstack.shrink(1);
-
-                        if (itemstack.isEmpty())
-                        {
-                            entityplayer.inventory.deleteStack(itemstack);
-                        }
-                    }
                 }
             }
         }
