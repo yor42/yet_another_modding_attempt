@@ -35,7 +35,7 @@ public class main {
 
     public static final String MOD_ID = "animearsenal";
     public static final String MOD_NAME = "Anime Arsenal";
-    public static final String VERSION = "2020.8-0.1.0";
+    public static final String VERSION = "2020.9-0.1.6";
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
@@ -52,6 +52,7 @@ public class main {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
+        soundInit.registerSounds();
         initEntityRender.RegisterEntityRender();
     }
 

@@ -1,0 +1,6 @@
+{
+  "railgun_fire": {"sounds":  [{"name":  "animearsenal:railgun_fire", "stream":  true}]},
+  "railgun_charge": {"sounds":  [{"name":  "animearsenal:railgun_charge", "stream":  true}]},
+  "railgun_noammo": {"sounds":  [{"name":  "animearsenal:railgun_noammo", "stream":  true}]},
+  "vitality": {"sounds":  [{"name":  "animearsenal:vitality", "stream":  true}]}
+}

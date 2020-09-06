@@ -31,8 +31,15 @@ item.chixiao.tooltip=Name literally means red sword. yes. literally.
 item.originiumsword.name=Originium Sword
 item.originiumsword.tooltip=Blade is made out of pure originium. that doesn't sound healthy isn't it? yeah. I wouldn't touch that part if i were you.
 
-item.m7024railgun.name=SF-7024 Man-Portable Railgun System
-item.m7024railgun.tooltip=I'MMA FIRIN' MAH LAZAH- wait, this is railgun!
+item.railgun.name=SF-4024 Man-Portable Railgun System
+item.railgun.tooltip=I'MMA FIRIN' MAH LAZAH- wait, this is railgun!
+item.railgun.ammocount=Remaining Rounds:
+
+item.railgun_shell.name=Railgun Rounds
+
+item.vitality_record.name=Music Disc
+item.vitality_record.tooltip=Mittsies vs. SayMaxWell - VITALITY [REMIX]
+item.record.vitality_record.desc=Mittsies vs. SayMaxWell - VITALITY [REMIX]
 
 #container
 container.basic_alloy_smelter=Basic Alloy Smelter

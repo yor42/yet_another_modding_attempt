@@ -56,9 +56,6 @@ public class renderPlasmaArrow extends Render {
 
         ModelBase model = new modelPlasmaArrow();
         model.render(bullet, 0.0F, 0.0F, 0.0F, f3, f4, 0.1F);
-        GlStateManager.rotate(0.0F, 1.0F, 0.0F, 0.0F);
-        GlStateManager.rotate(bullet.prevRotationYaw + (bullet.rotationYaw - bullet.prevRotationYaw) * f1 - 90.0F, 0.0F, 1.0F, 0.0F);
-        GlStateManager.rotate(bullet.prevRotationPitch + (bullet.rotationPitch - bullet.prevRotationPitch) * f1, 0.0F, 0.0F, 1.0F);
 
         GlStateManager.translate(-4.0F, 0.0F, 0.0F);
         GlStateManager.enableAlpha();

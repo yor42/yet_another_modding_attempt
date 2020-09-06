@@ -1,5 +1,6 @@
 package yor42.animearsenal.gameobject.item;
 
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityArrow;
@@ -8,19 +9,21 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
+import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import truefantasy.animcolle.Main;
+import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
+import yor42.animearsenal.init.soundInit;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
 
 import static yor42.animearsenal.init.iteminit.RAILGUN_AMMO;
 
 public class gflRailgun extends itembase {
-
-    protected int magMaxCapacity;
-    protected int magContents;
 
     public gflRailgun(String name){
         super(name, Main.animcolleweapon);
@@ -29,21 +32,6 @@ public class gflRailgun extends itembase {
         this.setMaxAmmo(new ItemStack(this), 5);
         this.addAmmo(new ItemStack(this), 5);
 
-        this.addPropertyOverride(new ResourceLocation("open"), new IItemPropertyGetter()
-        {
-            @SideOnly(Side.CLIENT)
-            public float apply(ItemStack stack, @Nullable World worldIn, @Nullable EntityLivingBase entityIn)
-            {
-                if (entityIn == null)
-                {
-                    return 0.0F;
-                }
-                else
-                {
-                    return !(entityIn.getActiveItemStack().getItem() instanceof gflRailgun) ? 0.0F : (float)(stack.getMaxItemUseDuration() - entityIn.getItemInUseCount()) / 20.0F;
-                }
-            }
-        });
         this.addPropertyOverride(new ResourceLocation("charging"), new IItemPropertyGetter()
         {
             @SideOnly(Side.CLIENT)
@@ -54,6 +42,12 @@ public class gflRailgun extends itembase {
         });
     }
 
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+        tooltip.add(new TextComponentTranslation(this.getUnlocalizedName()+".ammocount").getFormattedText()+" "+getAmmoCount(stack)+"/"+getMaxAmmo(stack));
+
+    }
 
     protected ItemStack findAmmo(EntityPlayer player)
     {
@@ -106,11 +100,11 @@ public class gflRailgun extends itembase {
 
     public double getDurabilityForDisplay(ItemStack stack)
     {
-        return (double)this.getAmmoCount(stack) / (double)this.getMaxAmmo(stack);
+        return 1.0-(double)this.getAmmoCount(stack) / (double)this.getMaxAmmo(stack);
     }
 
     /**
-     * returns the action that specifies what animation to play when the items is being used
+     * TODO add custom animation
      */
     public EnumAction getItemUseAction(ItemStack stack)
     {
@@ -122,19 +116,18 @@ public class gflRailgun extends itembase {
         return false;
     }
 
-    @Override
-    public boolean updateItemStackNBT(NBTTagCompound nbt) {
-        super.updateItemStackNBT(nbt);
-        this.magMaxCapacity = nbt.getInteger("magMaxCapacity");
-        this.magContents = nbt.getInteger("magContents");
-        return true;
-    }
-
     public void setMaxAmmo(ItemStack stack, int maxAmmoCount){
         if (!stack.hasTagCompound()) {
             stack.setTagCompound(new NBTTagCompound());
         }
         stack.getTagCompound().setInteger("magMaxCapacity", maxAmmoCount);
+    }
+
+    public void setMagContents(ItemStack stack, int ammoCount) {
+        if (!stack.hasTagCompound()) {
+            stack.setTagCompound(new NBTTagCompound());
+        }
+        stack.getTagCompound().setInteger("magContents", ammoCount);
     }
 
     public int getMaxAmmo(ItemStack stack){
@@ -147,20 +140,16 @@ public class gflRailgun extends itembase {
         if (!stack.hasTagCompound()) {
             stack.setTagCompound(new NBTTagCompound());
         }
-        if (stack.getTagCompound() == null || !stack.getTagCompound().hasKey("magContents")) {
-            return 0;
+        if(stack.getTagCompound() != null && stack.getTagCompound().hasKey("magContents")){
+            return stack.getTagCompound().getInteger("magContents");
         }
-        else return stack.getTagCompound().getInteger("magContents");
+        return 0;
     }
 
     protected int addAmmo(ItemStack stack, int count){
-        if (!stack.hasTagCompound()) {
+        if (!stack.hasTagCompound() || stack.getTagCompound() == null) {
             stack.setTagCompound(new NBTTagCompound());
         }
-        if (stack.getTagCompound() == null || !stack.getTagCompound().hasKey("magContents")) {
-            return 0;
-        }
-
         int currentCount = stack.getTagCompound().getInteger("magContents");
 
         currentCount += count;
@@ -189,14 +178,14 @@ public class gflRailgun extends itembase {
     };
 
     public boolean isMagEmpty(ItemStack stack){
-        return getAmmoCount(stack) == 0;
+        return this.getAmmoCount(stack) == 0;
     }
 
     @Override
     public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
         super.onCreated(stack, worldIn, playerIn);
         setMaxAmmo(stack, 5);
-        addAmmo(stack, 5);
+        setMagContents(stack,5);
     }
 
     @Override
@@ -208,29 +197,30 @@ public class gflRailgun extends itembase {
     public ActionResult onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
     {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        boolean isTheresAmmo = !this.findAmmo(playerIn).isEmpty();
         int remainingAmmoInInv = findAmmo(playerIn).getCount();
 
-        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, isTheresAmmo);
-        if (ret != null) return ret;
+        //pre-adding support for force reload
+        boolean isReloadable = remainingAmmoInInv >= this.getMaxAmmo(itemstack) - this.getAmmoCount(itemstack);
 
-        if ((!playerIn.capabilities.isCreativeMode && !isTheresAmmo) && this.isMagEmpty(itemstack))
+        if (!playerIn.capabilities.isCreativeMode && (!isReloadable && this.isMagEmpty(itemstack)))
         {
+            worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, soundInit.railgun_noammo, SoundCategory.PLAYERS, 1.0F, 1.0F);
             return new ActionResult<>(EnumActionResult.FAIL, itemstack);
         }
-        else if (this.isMagEmpty(itemstack) && isTheresAmmo && !playerIn.capabilities.isCreativeMode){
+        else if (this.isMagEmpty(itemstack) && isReloadable && !playerIn.capabilities.isCreativeMode){
 
             if (remainingAmmoInInv > this.getMaxAmmo(itemstack)){
                 remainingAmmoInInv = this.getMaxAmmo(itemstack);
             }
 
             this.addAmmo(itemstack, remainingAmmoInInv);
-            itemstack.shrink(remainingAmmoInInv);
+            this.findAmmo(playerIn).shrink(remainingAmmoInInv);
 
-            playerIn.getCooldownTracker().setCooldown(itemstack.getItem(), 20);
+            playerIn.getCooldownTracker().setCooldown(itemstack.getItem(), 20*remainingAmmoInInv);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
         else {
+            worldIn.playSound((EntityPlayer)null, playerIn.posX, playerIn.posY, playerIn.posZ, soundInit.railgun_charge, SoundCategory.PLAYERS, 1.0F, 1.0F);
             playerIn.setActiveHand(handIn);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
@@ -243,7 +233,6 @@ public class gflRailgun extends itembase {
         {
             EntityPlayer entityplayer = (EntityPlayer)entityLiving;
             boolean isPlayerCreative = entityplayer.capabilities.isCreativeMode;
-            ItemStack itemstack = this.findAmmo(entityplayer);
 
             int i = this.getMaxItemUseDuration(stack) - timeLeft;
             i = net.minecraftforge.event.ForgeEventFactory.onArrowLoose(stack, worldIn, entityplayer, i, !this.isMagEmpty(stack) || isPlayerCreative);
@@ -259,21 +248,15 @@ public class gflRailgun extends itembase {
 
                     if (!worldIn.isRemote)
                     {
-
-                        //currently fires arrow for debugging.
-
-                        ItemArrow itemarrow = (ItemArrow)(itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : Items.ARROW);
-                        EntityArrow entityarrow = itemarrow.createArrow(worldIn, itemstack, entityplayer);
-                        entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, charge * 3.0F, 1.0F);
+                        entityBullet bullet = new entityBullet(worldIn, entityLiving);
+                        bullet.shoot(entityLiving, entityLiving.rotationPitch,entityLiving.rotationYaw,0.0F, 6.0F, 1.0F);
+                        worldIn.spawnEntity(bullet);
 
                         if (!isPlayerCreative) {
                             this.useAmmo(stack);
                         }
-                        worldIn.spawnEntity(entityarrow);
                     }
-
-                    //To be replaced with custom soundevent.
-                    worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.PLAYERS, 1.0F, 1.0F / (itemRand.nextFloat() * 0.4F + 1.2F) + charge * 0.5F);
+                    worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, soundInit.railgun_fire, SoundCategory.PLAYERS, 1.0F, 1.0F);
                 }
             }
         }

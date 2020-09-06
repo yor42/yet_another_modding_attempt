@@ -12,6 +12,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import truefantasy.animcolle.util.Reference;
 import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
 import yor42.animearsenal.gameobject.entity.projectile.entityPlasmaArrow;
+import yor42.animearsenal.gameobject.entity.projectile.entityRailgunProjectile;
 import yor42.animearsenal.main;
 
 @Mod.EventBusSubscriber(modid = main.MOD_ID)
@@ -28,6 +29,7 @@ public class entityInit {
     private static void initProjectiles(IForgeRegistry<EntityEntry> registry){
         createEntityEntry("bullet", entityBullet.class, registry, 512);
         createEntityEntry("plasmaarrow", entityPlasmaArrow.class, registry, 513);
+        createEntityEntry("railgunProjectile", entityRailgunProjectile.class, registry, 514);
     }
 
     private static <T extends Entity> void createEntityEntry(String name, Class<T> cls, IForgeRegistry<EntityEntry> registry, int id) {

@@ -90,7 +90,7 @@ public class compoundBow extends ItemBow {
                 if (!worldIn.isRemote)
                 {
                     entityPlasmaArrow entityarrow = new entityPlasmaArrow(worldIn, entityplayer);
-                    entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, f * 3.0F, 1.0F);
+                    entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, f * 4.0F, 1.0F);
                     if (f == 1.0F)
                     {
                         entityarrow.setIsCritical(true);
