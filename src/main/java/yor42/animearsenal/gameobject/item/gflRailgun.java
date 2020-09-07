@@ -15,7 +15,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import truefantasy.animcolle.Main;
 import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
+import yor42.animearsenal.gameobject.entity.projectile.entityRailgunProjectile;
 import yor42.animearsenal.init.soundInit;
+import yor42.animearsenal.main;
 
 import javax.annotation.Nullable;
 
@@ -26,7 +28,7 @@ import static yor42.animearsenal.init.iteminit.RAILGUN_AMMO;
 public class gflRailgun extends itembase {
 
     public gflRailgun(String name){
-        super(name, Main.animcolleweapon);
+        super(name, main.ANIMEARSENAL_WEAPONS);
         this.maxStackSize = 1;
 
         this.setMaxAmmo(new ItemStack(this), 5);
@@ -248,7 +250,7 @@ public class gflRailgun extends itembase {
 
                     if (!worldIn.isRemote)
                     {
-                        entityBullet bullet = new entityBullet(worldIn, entityLiving);
+                        entityRailgunProjectile bullet = new entityRailgunProjectile(worldIn, entityLiving);
                         bullet.shoot(entityLiving, entityLiving.rotationPitch,entityLiving.rotationYaw,0.0F, 6.0F, 1.0F);
                         worldIn.spawnEntity(bullet);
 
@@ -261,4 +263,12 @@ public class gflRailgun extends itembase {
             }
         }
     }
+    /*
+    @Override
+    public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+        if (slotChanged) {return true;}
+        return getAmmoCount(oldStack) == 0;
+    }
+
+     */
 }

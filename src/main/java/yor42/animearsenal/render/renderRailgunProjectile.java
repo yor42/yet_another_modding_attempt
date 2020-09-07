@@ -8,6 +8,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
+import yor42.animearsenal.gameobject.entity.projectile.entityRailgunProjectile;
 import yor42.animearsenal.main;
 import yor42.animearsenal.model.entity.projectile.modelRailgunProjectile;
 
@@ -39,7 +40,7 @@ public class renderRailgunProjectile extends Render {
         return p_82400_1_ + p_82400_3_ * f;
     }
 
-    public void render(entityBullet bullet, double d, double d1, double d2, float f, float f1) {
+    public void render(entityRailgunProjectile bullet, double d, double d1, double d2, float f, float f1) {
         bindEntityTexture(bullet);
         GL11.glPushMatrix();
         GL11.glTranslatef((float) d, (float) d1, (float) d2);
@@ -57,7 +58,7 @@ public class renderRailgunProjectile extends Render {
 
     @Override
     public void doRender(Entity entity, double d, double d1, double d2, float f, float f1) {
-        render((entityBullet) entity, d, d1, d2, f, f1);
+        render((entityRailgunProjectile) entity, d, d1, d2, f, f1);
     }
 
     @Nullable

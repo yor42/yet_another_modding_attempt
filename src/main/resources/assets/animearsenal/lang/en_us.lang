@@ -8,7 +8,7 @@ item.soulumsword.name=Soulum Sword
 item.soulumsword.tooltip=the sword made out of pure vengence. only the owner can fully wield its power.
 
 item.sakurablossom.name=Sakura Blossom
-item.sakurablossom.tooltip=A spiritual blade once enshrined in the Yae Jinjia. but its my smacc-o-matic now.
+item.sakurablossom.tooltip=A spiritual blade once enshrined in the Yae Jinjia. Wait... How did you even got it?
 
 item.lordchaldeas.name=Lord Chaldeas
 item.lordchaldeas.tooltip=Legendary shield known as impenetrateable... only when servant uses it.
@@ -40,6 +40,9 @@ item.railgun_shell.name=Railgun Rounds
 item.vitality_record.name=Music Disc
 item.vitality_record.tooltip=Mittsies vs. SayMaxWell - VITALITY [REMIX]
 item.record.vitality_record.desc=Mittsies vs. SayMaxWell - VITALITY [REMIX]
+
+#Creativetabs
+itemGroup.animeArsenalWeapons=Anime Arsenal Weapons
 
 #container
 container.basic_alloy_smelter=Basic Alloy Smelter

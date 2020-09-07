@@ -21,6 +21,7 @@ import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import yor42.animearsenal.gameobject.entity.projectile.entityPlasmaArrow;
 import yor42.animearsenal.init.iteminit;
+import yor42.animearsenal.main;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -32,7 +33,7 @@ public class compoundBow extends ItemBow {
     public compoundBow(String name) {
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(animcolleweapon);
+        setCreativeTab(main.ANIMEARSENAL_WEAPONS);
         setMaxStackSize(1);
         setMaxDamage(1024);
 
@@ -90,7 +91,7 @@ public class compoundBow extends ItemBow {
                 if (!worldIn.isRemote)
                 {
                     entityPlasmaArrow entityarrow = new entityPlasmaArrow(worldIn, entityplayer);
-                    entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, f * 4.0F, 1.0F);
+                    entityarrow.shoot(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, f * 5.0F, 1.0F);
                     if (f == 1.0F)
                     {
                         entityarrow.setIsCritical(true);

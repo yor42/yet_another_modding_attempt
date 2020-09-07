@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import yor42.animearsenal.init.iteminit;
+import yor42.animearsenal.main;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -26,7 +27,7 @@ public class toolShield extends Item {
         this.maxStackSize = 1;
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
-        this.setCreativeTab(animcolleweapon);
+        this.setCreativeTab(main.ANIMEARSENAL_WEAPONS);
         this.setMaxDamage(maxDamage);
         this.setMaxStackSize(1);
 
@@ -41,9 +42,6 @@ public class toolShield extends Item {
         BlockDispenser.DISPENSE_BEHAVIOR_REGISTRY.putObject(this, ItemArmor.DISPENSER_BEHAVIOR);
     }
 
-    public boolean showDurabilityBar(ItemStack stack) {
-        return true;
-    }
 
     public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.BLOCK;

@@ -1,6 +1,7 @@
 package yor42.animearsenal;
 
 import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -18,6 +19,7 @@ import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import truefantasy.animcolle.util.Reference;
+import yor42.animearsenal.gameobject.creativetabs.animeArsenalWeapons;
 import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
 import yor42.animearsenal.handler.guiHandler;
 import yor42.animearsenal.init.*;
@@ -28,14 +30,15 @@ import yor42.animearsenal.util.reference;
 @Mod(
         modid = main.MOD_ID,
         name = main.MOD_NAME,
-        version = main.VERSION,
-        dependencies = "required-after:animcolle"
+        version = main.VERSION
 )
 public class main {
 
     public static final String MOD_ID = "animearsenal";
     public static final String MOD_NAME = "Anime Arsenal";
-    public static final String VERSION = "2020.9-0.1.6";
+    public static final String VERSION = "2020.9-0.1.7";
+
+    public static final CreativeTabs ANIMEARSENAL_WEAPONS = new animeArsenalWeapons("animeArsenalWeapons");
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.

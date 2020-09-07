@@ -20,10 +20,6 @@ public class entityRailgunProjectile extends EntityThrowable {
         super(worldIn, shooterIn);
     }
 
-    public entityRailgunProjectile(World worldIn, double x, double y, double z) {
-        super(worldIn, x,y,z);
-        //bulletCalibur = calibur;
-    }
 
     @Override
     protected void onImpact(RayTraceResult result) {
@@ -43,6 +39,12 @@ public class entityRailgunProjectile extends EntityThrowable {
         if (!this.world.isRemote)
         {
             this.setDead();
+            if(result.entityHit != null){
+                this.world.createExplosion(this, result.entityHit.posX, result.entityHit.posY, result.entityHit.posZ, 2.0F, false);
+            }
+            else {
+                this.world.createExplosion(this, result.getBlockPos().getX(), result.getBlockPos().getY(), result.getBlockPos().getZ(), 1.5F, false);
+            }
         }
     }
 }

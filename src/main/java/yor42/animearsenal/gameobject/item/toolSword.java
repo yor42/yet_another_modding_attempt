@@ -6,6 +6,7 @@ import net.minecraft.item.ItemSword;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
 import yor42.animearsenal.init.iteminit;
+import yor42.animearsenal.main;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -17,12 +18,8 @@ public class toolSword extends ItemSword {
         super(material);
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(animcolleweapon);
+        setCreativeTab(main.ANIMEARSENAL_WEAPONS);
         iteminit.ITEMS.add(this);
-    }
-
-    public boolean showDurabilityBar(ItemStack stack) {
-        return true;
     }
 
     @Override
