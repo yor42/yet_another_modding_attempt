@@ -13,11 +13,12 @@ item.sakurablossom.tooltip=A spiritual blade once enshrined in the Yae Jinjia. W
 item.lordchaldeas.name=Lord Chaldeas
 item.lordchaldeas.tooltip=Legendary shield known as impenetrateable... only when servant uses it.
 
-item.megustaff.name=Megumin's staff
-item.megustaff.tooltip=Can wield great amount of mana. but its just good as stick for non-wizard like you.
+item.megustaff.name=Arc Wizard's staff
+item.megustaff.tooltip=Can wield enough mana to cast explosion spell.\nSide Effect: will drain your entire hunger, Stamina and 1evel if handled by untrained personnel.
+item.megustaff.unabletocast=Can not cast explosion: You need at least 10 level and Hunger value Greater than 6.
 
 item.compoundbow.name=CV-6 Compound Bow
-item.compoundbow.tooltip=Compound Bow made for KANSEN. theres no way human can use all of its power.
+item.compoundbow.tooltip=Compound Bow made for KANSEN. Once pulled Arrow made out of plasma forms from its core.
 
 item.wisdomcube.name=Wisdom Cube
 item.wisdomcube.tooltip=Mysterious glowing cube. I made texture for it but it had nowhere to use, so i added it here as some sort of trophy.

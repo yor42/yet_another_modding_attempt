@@ -3,6 +3,7 @@ package yor42.animearsenal.init;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.Loader;
 import scala.xml.PrettyPrinter;
 import truefantasy.animcolle.Main;
 import yor42.animearsenal.gameobject.item.*;
@@ -31,7 +32,7 @@ public class iteminit {
     public static final Item VITALITY_DISC = new itemRecords("vitality_record", CreativeTabs.MISC, soundInit.vitality);
 
     //ammo
-    public static final Item RAILGUN_AMMO = new itembase("railgun_shell", animcolleweapon);
+    public static final Item RAILGUN_AMMO = new itembase("railgun_shell", main.ANIMEARSENAL_WEAPONS);
 
 
     //weapon
@@ -46,7 +47,7 @@ public class iteminit {
     public static final Item SOULUM_SWORD = new toolSword("soulumsword", HARU_EQUIP);
     public static final Item SAKURA_BLOSSOM = new toolSword("sakurablossom", YAE_EQUIP);
     public static final Item SHIELD_LORDCHALDEAS = new toolShield("lordchaldeas", CreativeTabs.COMBAT, 1200);
-    public static final Item MEGU_STAFF = new toolSword("megustaff", MEGUMIN_WEAPON);
+    public static final Item MEGU_STAFF = new meguStaff("megustaff");
     public static final Item CV6_BOW = new compoundBow("compoundbow");
     public static final Item CHIXIAO = new toolSword("chixiao", CHEN_EQUIP);
     public static final Item ORIGINIUM_SWORD = new toolSword("originiumsword", TEXAS_EQUIP);

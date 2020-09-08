@@ -12,6 +12,6 @@ public class animeArsenalWeapons extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(iteminit.MEGU_STAFF);
+        return new ItemStack(iteminit.CHIXIAO);
     }
 }

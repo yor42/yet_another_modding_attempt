@@ -7,6 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -18,6 +19,8 @@ import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import truefantasy.animcolle.util.Reference;
 import yor42.animearsenal.gameobject.creativetabs.animeArsenalWeapons;
 import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
@@ -36,7 +39,7 @@ public class main {
 
     public static final String MOD_ID = "animearsenal";
     public static final String MOD_NAME = "Anime Arsenal";
-    public static final String VERSION = "2020.9-0.1.7";
+    public static final String VERSION = "2020.9-0.1.8";
 
     public static final CreativeTabs ANIMEARSENAL_WEAPONS = new animeArsenalWeapons("animeArsenalWeapons");
 
@@ -64,7 +67,8 @@ public class main {
      */
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-    NetworkRegistry.INSTANCE.registerGuiHandler(main.INSTANCE, new guiHandler());
+
+        NetworkRegistry.INSTANCE.registerGuiHandler(main.INSTANCE, new guiHandler());
         recipeInit.initializeFurnaceRecipes();
     }
 
@@ -80,24 +84,6 @@ public class main {
      * Forge will automatically look up and bind blocks to the fields in this class
      * based on their registry name.
      */
-    @GameRegistry.ObjectHolder(MOD_ID)
-    public static class Blocks {
-      /*
-          public static final MySpecialBlock mySpecialBlock = null; // placeholder for special block below
-      */
-    }
-
-    /**
-     * Forge will automatically look up and bind items to the fields in this class
-     * based on their registry name.
-     */
-    @GameRegistry.ObjectHolder(MOD_ID)
-    public static class Items {
-      /*
-          public static final ItemBlock mySpecialBlock = null; // itemblock for the block above
-          public static final MySpecialItem mySpecialItem = null; // placeholder for special item below
-      */
-    }
 
     /**
      * This is a special class that listens to registry events, to allow creation of mod blocks and items at the proper time.

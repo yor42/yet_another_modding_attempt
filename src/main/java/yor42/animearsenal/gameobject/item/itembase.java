@@ -12,13 +12,19 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 public class itembase extends Item {
+
     public itembase(String name, CreativeTabs tab){
+        this(name, tab, true);
+    }
+
+    public itembase(String name, CreativeTabs tab, boolean register){
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(tab);
 
-
-        iteminit.ITEMS.add(this);
+        if (register) {
+            iteminit.ITEMS.add(this);
+        }
     }
 
     @Override
