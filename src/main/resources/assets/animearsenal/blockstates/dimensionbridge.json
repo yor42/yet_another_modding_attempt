@@ -1,0 +1,32 @@
+{
+"variants": {
+"active=false,facing=north": {
+"model": "animearsenal:dimensionbridge_off"
+},
+"active=false,facing=south": {
+"model": "animearsenal:dimensionbridge_off",
+"y": 180
+},
+"active=false,facing=west": {
+"model": "animearsenal:dimensionbridge_off",
+"y": -90
+},
+"active=false,facing=east": {
+"model": "animearsenal:dimensionbridge_off",
+"y": 90
+},
+"active=true,facing=north": {
+"model": "animearsenal:dimensionbridge_on"
+},
+"active=true,facing=south": {
+"model": "animearsenal:dimensionbridge_on",
+"y": 180
+},
+"active=true,facing=west": {
+"model": "animearsenal:dimensionbridge_on",
+"y": -90
+},
+"active=true,facing=east": {
+"model": "animearsenal:dimensionbridge_on",
+"y": 90
+}}}

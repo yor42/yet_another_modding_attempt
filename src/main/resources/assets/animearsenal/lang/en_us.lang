@@ -14,7 +14,8 @@ item.lordchaldeas.name=Lord Chaldeas
 item.lordchaldeas.tooltip=Legendary shield known as impenetrateable... only when servant uses it.
 
 item.megustaff.name=Arc Wizard's staff
-item.megustaff.tooltip=Can wield enough mana to cast explosion spell.\nSide Effect: will drain your entire hunger, Stamina and 1evel if handled by untrained personnel.
+item.megustaff.tooltip=Can wield enough mana to cast explosion spell.
+item.megustaff.tooltip2=Side Effect: will drain your entire hunger, Stamina and 1evel if handled by untrained personnel.
 item.megustaff.unabletocast=Can not cast explosion: You need at least 10 level and Hunger value Greater than 6.
 
 item.compoundbow.name=CV-6 Compound Bow
@@ -45,5 +46,15 @@ item.record.vitality_record.desc=Mittsies vs. SayMaxWell - VITALITY [REMIX]
 #Creativetabs
 itemGroup.animeArsenalWeapons=Anime Arsenal Weapons
 
+#tiles
+tile.dimensionbridge.name=Dimension Bridge
+tile.dimensionbridge.tooltip=Finds Entity that matches provided catalyst across the dimension and teleports them to here.
+tile.dimensionbridge.tooltip2=Must have at least 2 block clearance above machine frame.
+
 #container
 container.basic_alloy_smelter=Basic Alloy Smelter
+container.dimension_bridge=Dimensional Bridge
+
+gui.dimensionbridge.error=ERROR!
+gui.dimensionbridge.ok=ALL OK
+

@@ -26,9 +26,4 @@ public class itembase extends Item {
             iteminit.ITEMS.add(this);
         }
     }
-
-    @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-        tooltip.add(new TextComponentTranslation(this.getUnlocalizedName()+".tooltip").getFormattedText());
-    }
 }

@@ -1,4 +1,4 @@
-package yor42.animearsenal.recipes;
+package yor42.animearsenal.gameobject.recipes;
 
 import com.google.common.collect.HashBasedTable;
 import com.google.common.collect.Maps;

@@ -23,6 +23,9 @@ import yor42.animearsenal.gameobject.entity.projectile.entityRailgunProjectile;
 import yor42.animearsenal.init.soundInit;
 import yor42.animearsenal.main;
 
+import javax.annotation.Nullable;
+import java.util.List;
+
 
 public class meguStaff extends itembase {
 
@@ -50,6 +53,13 @@ public class meguStaff extends itembase {
             playerIn.setActiveHand(handIn);
             return new ActionResult<>(EnumActionResult.SUCCESS, itemstack);
         }
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+        tooltip.add(new TextComponentTranslation(this.getUnlocalizedName()+".tooltip").getFormattedText());
+        tooltip.add(new TextComponentTranslation(this.getUnlocalizedName()+".tooltip2").getFormattedText());
     }
 
     public int getMaxItemUseDuration(ItemStack stack)

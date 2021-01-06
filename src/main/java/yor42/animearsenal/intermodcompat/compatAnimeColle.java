@@ -2,7 +2,7 @@ package yor42.animearsenal.intermodcompat;
 
 public class compatAnimeColle {
 
-    public static boolean isAnimecolleAvail = false;
+    public boolean isAnimecolleAvail = false;
 
     public compatAnimeColle(){
         isAnimecolleAvail = true;

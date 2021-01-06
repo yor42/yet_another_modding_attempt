@@ -23,7 +23,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import yor42.animearsenal.gameobject.blocks.blockBasicAlloySmelter;
-import yor42.animearsenal.recipes.AlloyRecipe;
+import yor42.animearsenal.gameobject.recipes.AlloyRecipe;
 
 public class tileentitybasicalloysmelter extends TileEntity implements ITickable {
     //0,1 = input, 2= fuel, 3 = output

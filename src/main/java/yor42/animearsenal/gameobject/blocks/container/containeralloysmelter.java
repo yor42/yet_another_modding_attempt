@@ -12,7 +12,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 import yor42.animearsenal.gameobject.blocks.tileentity.tileentitybasicalloysmelter;
-import yor42.animearsenal.recipes.AlloyRecipe;
+import yor42.animearsenal.gameobject.recipes.AlloyRecipe;
 
 public class containeralloysmelter extends Container {
 

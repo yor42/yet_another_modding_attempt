@@ -2,12 +2,9 @@ package yor42.animearsenal;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -15,15 +12,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
-import net.minecraftforge.fml.common.registry.EntityEntry;
-import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.registries.IForgeRegistry;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import truefantasy.animcolle.util.Reference;
 import yor42.animearsenal.gameobject.creativetabs.animeArsenalWeapons;
-import yor42.animearsenal.gameobject.entity.projectile.entityBullet;
+import yor42.animearsenal.gameobject.recipes.bridgetargets;
 import yor42.animearsenal.handler.guiHandler;
 import yor42.animearsenal.init.*;
 import yor42.animearsenal.proxy.commonProxy;
@@ -70,6 +60,8 @@ public class main {
 
         NetworkRegistry.INSTANCE.registerGuiHandler(main.INSTANCE, new guiHandler());
         recipeInit.initializeFurnaceRecipes();
+        bridgetargets.instance().addSummoningRecipiesAnimecolle();
+
     }
 
     /**
