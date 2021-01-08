@@ -12,12 +12,13 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import yor42.animearsenal.gameobject.creativetabs.animeArsenalMachines;
 import yor42.animearsenal.gameobject.creativetabs.animeArsenalWeapons;
 import yor42.animearsenal.gameobject.recipes.bridgetargets;
 import yor42.animearsenal.handler.guiHandler;
 import yor42.animearsenal.init.*;
 import yor42.animearsenal.proxy.commonProxy;
-import yor42.animearsenal.registry.tileentityRegistry;
+import yor42.animearsenal.init.tileentityRegistry;
 import yor42.animearsenal.util.reference;
 
 @Mod(
@@ -32,6 +33,7 @@ public class main {
     public static final String VERSION = "2020.9-0.1.8";
 
     public static final CreativeTabs ANIMEARSENAL_WEAPONS = new animeArsenalWeapons("animeArsenalWeapons");
+    public static final CreativeTabs ANIMEARSENAL_MACHINES = new animeArsenalMachines("animeArsenalMachines");
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.

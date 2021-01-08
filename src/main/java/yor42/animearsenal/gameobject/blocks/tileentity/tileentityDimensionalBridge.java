@@ -25,6 +25,7 @@ import net.minecraftforge.energy.EnergyStorage;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import truefantasy.animcolle.init.ItemInit;
+import yor42.animearsenal.configuration;
 import yor42.animearsenal.gameobject.blocks.blockDimensionBridge;
 import yor42.animearsenal.gameobject.blocks.container.containerDimensionBridge;
 import yor42.animearsenal.gameobject.recipes.bridgetargets;
@@ -41,14 +42,12 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
     //0 - slot for key item
     //1 - slot for compressed matter
 
-    private Function<World, Entity> Entity;
-
-    private final int internal_battery = 100000;
+    private final int internal_battery = configuration.MACHINES.buffer_dimension_bridge;
     private final int maxoutput = 0;
-    private final int maxreceive = 5000;
+    private final int maxreceive = configuration.MACHINES.maxPowerInput_dimensionbridge;
     private boolean active;
     private int isobstructed;
-    private final int energyusage = 500;
+    private final int energyusage = configuration.MACHINES.powerConsumption_DimensionBridge;
 
     public int getTotalProcessTime(){
         return totalProcessTime;
@@ -61,7 +60,7 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
     public ItemStackHandler machineItemStacks = new ItemStackHandler(2);
 
     private int processTime;
-    private int totalProcessTime = 200;
+    private int totalProcessTime = 6000;
     private String machineCustomName;
 
     @Override
@@ -126,6 +125,7 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
         this.totalProcessTime = compound.getInteger("totalProcessTime");
         this.buffer.readfromNBT(compound);
         this.isobstructed = compound.getInteger("isobstructed");
+        this.active=compound.getBoolean("isactive");
 
         if (compound.hasKey("CustomName", 8))
         {
@@ -142,6 +142,7 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
         compound.setTag("Inventory", this.machineItemStacks.serializeNBT());
         compound.setInteger("energy", this.buffer.getEnergyStored());
         compound.setInteger("isobstructed", this.isobstructed);
+        compound.setBoolean("isactive", this.isActive());
         this.buffer.writetoNBT(compound);
 
 
@@ -307,9 +308,9 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
         //1 - slot for compressed matter
         ItemStack itemstack = this.machineItemStacks.getStackInSlot(0);
         ItemStack itemstack1 = this.machineItemStacks.getStackInSlot(1);
-        this.Entity = bridgetargets.instance().getRecipeResult(this.machineItemStacks.getStackInSlot(0));
+        Function<World, net.minecraft.entity.Entity> entity = bridgetargets.instance().getRecipeResult(this.machineItemStacks.getStackInSlot(0));
         if(!this.world.isRemote) {
-            Entity mob = this.Entity.apply(this.world);
+            Entity mob = entity.apply(this.world);
 
             mob.setLocationAndAngles(getPos().getX()+0.5, getPos().getY()+1.1, getPos().getZ()+0.5, 0,0);
 
@@ -323,6 +324,7 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
         itemstack.shrink(1);
         itemstack1.shrink(1);
     }
+
 
     public int getField(int id)
     {
@@ -351,6 +353,7 @@ public class tileentityDimensionalBridge extends TileEntity implements ITickable
                 break;
             case 2:
                 this.isobstructed = value;
+                break;
             default:
                 break;
         }

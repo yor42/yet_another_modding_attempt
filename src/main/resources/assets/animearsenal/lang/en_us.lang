@@ -15,7 +15,8 @@ item.lordchaldeas.tooltip=Legendary shield known as impenetrateable... only when
 
 item.megustaff.name=Arc Wizard's staff
 item.megustaff.tooltip=Can wield enough mana to cast explosion spell.
-item.megustaff.tooltip2=Side Effect: will drain your entire hunger, Stamina and 1evel if handled by untrained personnel.
+item.megustaff.tooltip2=Side Effect: costs your entire hunger, Stamina and 10 level.
+
 item.megustaff.unabletocast=Can not cast explosion: You need at least 10 level and Hunger value Greater than 6.
 
 item.compoundbow.name=CV-6 Compound Bow
@@ -24,8 +25,8 @@ item.compoundbow.tooltip=Compound Bow made for KANSEN. Once pulled Arrow made ou
 item.wisdomcube.name=Wisdom Cube
 item.wisdomcube.tooltip=Mysterious glowing cube. I made texture for it but it had nowhere to use, so i added it here as some sort of trophy.
 
-item.pureoriginium.name=Originium Crystal
-item.pureoriginium.tooltip=Notorious source for energy and oripathy. I made texture for it but it had nowhere to use, so i added it here as some sort of trophy. dont worry. it won't kill you.
+item.pureoriginium.name=Originium Prime
+item.pureoriginium.tooltip=Notorious source for energy and oripathy.
 
 item.chixiao.name=Chi Xiao
 item.chixiao.tooltip=Name literally means red sword. yes. literally.
@@ -51,10 +52,24 @@ tile.dimensionbridge.name=Dimension Bridge
 tile.dimensionbridge.tooltip=Finds Entity that matches provided catalyst across the dimension and teleports them to here.
 tile.dimensionbridge.tooltip2=Must have at least 2 block clearance above machine frame.
 
+tile.generator_originium.name=Originium Generator
+
 #container
 container.basic_alloy_smelter=Basic Alloy Smelter
 container.dimension_bridge=Dimensional Bridge
+container.originiumgenerator=Originium Generator
 
-gui.dimensionbridge.error=ERROR!
-gui.dimensionbridge.ok=ALL OK
+gui.imgtmachine.nofuel=NO FUEL
+gui.imgtmachine.error=ERROR!
+gui.imgtmachine.ok=ALL OK
+gui.imgtmachine.generationpaused=PAUSED
+
+gui.imgtmachine.ready=§2Machine is ready§r
+gui.imgtmachine.active=§2Machine is running§r
+gui.imgtmachine.notenoughpower=§eERROR: Not enough Power§r
+gui.dimensionbridge.obstructed=§4FATAL: Spawn Area Obstructed§r
+
+gui.generator.tooltip.paused=INFO:Generation is paused - Full Buffer
+gui.generator.tooltip.nofuel=§4FATAL: No Fuel Detected§r
+gui.imgtmachine.generating=Generating
 

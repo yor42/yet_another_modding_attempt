@@ -1,5 +1,4 @@
 package yor42.animearsenal.gameobject.item;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -10,17 +9,12 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.Loader;
-import truefantasy.animcolle.entity.projectile.EntityMeguminExplosion;
-import yor42.animearsenal.gameobject.entity.projectile.entityRailgunProjectile;
-import yor42.animearsenal.init.soundInit;
+import yor42.animearsenal.configuration;
 import yor42.animearsenal.main;
 
 import javax.annotation.Nullable;
@@ -31,6 +25,7 @@ public class meguStaff extends itembase {
 
     public meguStaff(String name){
         super(name, main.ANIMEARSENAL_WEAPONS);
+        this.setMaxDamage(configuration.WEAPONS.megustaff_durability);
     }
 
 
@@ -139,10 +134,18 @@ public class meguStaff extends itembase {
                     }
                     if (!entityplayer.isCreative()) {
                         stack.damageItem(1, entityplayer);
-                        entityplayer.getFoodStats().setFoodLevel(0);
-                        entityplayer.getFoodStats().setFoodSaturationLevel(0);
-                        entityplayer.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 1200, 1));
-                        entityplayer.addExperienceLevel(-10);
+
+                        if (configuration.WEAPONS.megustaff_drainhunger) {
+                            entityplayer.getFoodStats().setFoodLevel(0);
+                            entityplayer.getFoodStats().setFoodSaturationLevel(0);
+                        }
+                        if (configuration.WEAPONS.megustaff_applydebuffs) {
+                            entityplayer.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 1000, 1));
+                            entityplayer.addPotionEffect(new PotionEffect(MobEffects.MINING_FATIGUE, 1200, 2));
+                        }
+                        if (configuration.WEAPONS.megustaff_levelcost != 0){
+                            entityplayer.addExperienceLevel(-configuration.WEAPONS.megustaff_levelcost);
+                        }
                     }
 
                 }

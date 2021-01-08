@@ -53,22 +53,16 @@ public class containerDimensionBridge extends Container {
     {
         super.detectAndSendChanges();
 
-        for (int i = 0; i < this.listeners.size(); ++i)
-        {
-            IContainerListener icontainerlistener = this.listeners.get(i);
-
-            if (this.progress != this.tileEntity.getField(0))
-            {
+        for (IContainerListener icontainerlistener : this.listeners) {
+            if (this.progress != this.tileEntity.getField(0)) {
                 icontainerlistener.sendWindowProperty(this, 0, this.tileEntity.getField(0));
             }
 
-            if (this.energy != this.tileEntity.getField(1))
-            {
+            if (this.energy != this.tileEntity.getField(1)) {
                 icontainerlistener.sendWindowProperty(this, 1, this.tileEntity.getField(1));
             }
 
-            if (this.isobstructed != this.tileEntity.getField(2))
-            {
+            if (this.isobstructed != this.tileEntity.getField(2)) {
                 icontainerlistener.sendWindowProperty(this, 2, this.tileEntity.getField(2));
             }
         }
@@ -103,7 +97,7 @@ public class containerDimensionBridge extends Container {
             ItemStack itemstack1 = slot.getStack();
             itemstack = itemstack1.copy();
 
-            if (index == 2)
+            if (index == 0||index==1)
             {
                 if (!this.mergeItemStack(itemstack1, 3, 39, true))
                 {
@@ -112,8 +106,7 @@ public class containerDimensionBridge extends Container {
 
                 slot.onSlotChange(itemstack1, itemstack);
             }
-            else if (index != 1 && index != 0)
-            {
+            else {
                 if (!(bridgetargets.instance().getRecipeResult(itemstack1) == null))
                 {
                     if (!this.mergeItemStack(itemstack1, 0, 1, false))
@@ -123,26 +116,22 @@ public class containerDimensionBridge extends Container {
                 }
                 else if (itemstack1.getItem() == ItemInit.MISC_COMPRESSEDMATTER)
                 {
-                    if (!this.mergeItemStack(itemstack1, 1, 1, false))
+                    if (!this.mergeItemStack(itemstack1, 1, 2, false))
                     {
                         return ItemStack.EMPTY;
                     }
                 }
-                else if (index >= 3 && index < 30)
+                else if (index < 30)
                 {
                     if (!this.mergeItemStack(itemstack1, 30, 37, false))
                     {
                         return ItemStack.EMPTY;
                     }
                 }
-                else if (index >= 30 && index < 37 && !this.mergeItemStack(itemstack1, 3, 30, false))
+                else if (index < 37 && !this.mergeItemStack(itemstack1, 3, 30, false))
                 {
                     return ItemStack.EMPTY;
                 }
-            }
-            else if (!this.mergeItemStack(itemstack1, 3, 37, false))
-            {
-                return ItemStack.EMPTY;
             }
 
             if (itemstack1.isEmpty())

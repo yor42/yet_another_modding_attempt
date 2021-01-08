@@ -6,5 +6,6 @@ public class reference {
 
     public static int GUI_ALLOYSMELTER = 0;
     public static int GUI_DIMENSIONBRIDGE = 1;
+    public static int GUI_ORIGINIUM_GENERATOR = 2;
 
 }

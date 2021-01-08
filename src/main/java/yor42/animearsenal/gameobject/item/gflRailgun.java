@@ -186,8 +186,8 @@ public class gflRailgun extends itembase {
     @Override
     public void onCreated(ItemStack stack, World worldIn, EntityPlayer playerIn) {
         super.onCreated(stack, worldIn, playerIn);
-        setMaxAmmo(stack, 5);
-        setMagContents(stack,5);
+        this.setMaxAmmo(stack, 5);
+        this.setMagContents(stack,5);
     }
 
     @Override

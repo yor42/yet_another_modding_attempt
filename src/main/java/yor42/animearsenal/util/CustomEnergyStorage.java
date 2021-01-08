@@ -43,7 +43,7 @@ public class CustomEnergyStorage extends EnergyStorage implements IEnergyStorage
 
         int energyReceived = Math.min(capacity - energy, Math.min(this.maxReceive, maxReceive));
         if (!simulate)
-            energy += energyReceived;
+            this.energy += energyReceived;
         return energyReceived;
     }
 
@@ -55,19 +55,19 @@ public class CustomEnergyStorage extends EnergyStorage implements IEnergyStorage
 
         int energyExtracted = Math.min(energy, Math.min(this.maxExtract, maxExtract));
         if (!simulate)
-            energy -= energyExtracted;
+            this.energy -= energyExtracted;
         return energyExtracted;
     }
 
     public int setEnergy(int Value){
-        energy = Value;
+        this.energy = Value;
         return energy;
     }
 
     @Override
     public int getEnergyStored()
     {
-        return energy;
+        return this.energy;
     }
 
     @Override

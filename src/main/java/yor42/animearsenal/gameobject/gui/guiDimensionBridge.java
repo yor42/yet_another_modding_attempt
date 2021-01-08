@@ -1,5 +1,6 @@
 package yor42.animearsenal.gameobject.gui;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -8,6 +9,10 @@ import net.minecraft.util.text.TextComponentTranslation;
 import yor42.animearsenal.gameobject.blocks.container.containerDimensionBridge;
 import yor42.animearsenal.gameobject.blocks.tileentity.tileentityDimensionalBridge;
 import yor42.animearsenal.main;
+
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class guiDimensionBridge extends GuiContainer {
 
@@ -31,9 +36,40 @@ public class guiDimensionBridge extends GuiContainer {
 
     @Override
     public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+
+        int currentpower = this.tileentity.getField(1);
+        int maxpower = this.tileentity.buffer.getMaxEnergyStored();
+        int processtime = this.tileentity.getField(0);
+
         this.drawDefaultBackground();
         super.drawScreen(mouseX, mouseY, partialTicks);
         this.renderHoveredToolTip(mouseX, mouseY);
+        if(isPointInRegion(157, 6,10,72,mouseX,mouseY)){
+            this.drawHoveringText(currentpower+"/"+maxpower+" FE", mouseX,mouseY);
+        }
+        if(isPointInRegion(104, 6,50,71,mouseX,mouseY)){
+            List<String> strings = new ArrayList<String>();
+
+            boolean obstructed = this.tileentity.getField(2)==1;
+            boolean outofpower = this.tileentity.getField(1) < this.tileentity.getEnergyusage();
+            if(obstructed||outofpower) {
+                if (obstructed) {
+                    strings.add(new TextComponentTranslation("gui.dimensionbridge.obstructed").getFormattedText());
+                }
+                if (outofpower) {
+                    strings.add(new TextComponentTranslation("gui.imgtmachine.notenoughpower").getFormattedText());
+                }
+            }
+            else {
+                if(processtime >= 0){
+                    strings.add(new TextComponentTranslation("gui.imgtmachine.active").getFormattedText());
+                }
+                else {
+                    strings.add(new TextComponentTranslation("gui.imgtmachine.ready").getFormattedText());
+                }
+            }
+            this.drawHoveringText(strings, mouseX,mouseY);
+        }
     }
 
     private int getStoredPowerScaled(int pixels){
@@ -45,21 +81,32 @@ public class guiDimensionBridge extends GuiContainer {
 
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
+
+
         String s = this.tileentity.getDisplayName().getUnformattedText();
         this.fontRenderer.drawString(s, 5, 6, 4210752);
-        drawstatusstring();
+        this.fontRenderer.drawString(new TextComponentTranslation(getstatuskey()).getFormattedText(), 106, 8, getcolor());
         this.fontRenderer.drawString(this.playerinv.getDisplayName().getUnformattedText(), 8, this.ySize - 96 + 2, 4210752);
     }
 
-    private void drawstatusstring() {
-        int obstructed = this.tileentity.getField(2);
+    private int getcolor(){
+        boolean obstructed = this.tileentity.getField(2)==1;
         boolean outofpower = this.tileentity.getField(1) < this.tileentity.getEnergyusage();
-        if(obstructed==1 || outofpower){
-            this.fontRenderer.drawString(new TextComponentTranslation("gui.dimensionbridge.error").getFormattedText(), 106, 8, 16711680);
+
+        if (obstructed||outofpower){
+            return 16711680;
         }
-        else{
-            this.fontRenderer.drawString(new TextComponentTranslation("gui.dimensionbridge.ok").getFormattedText(), 106, 8, 65280);
+        else return 65280;
+    }
+    private String getstatuskey(){
+        boolean obstructed = this.tileentity.getField(2)==1;
+        boolean outofpower = this.tileentity.getField(1) < this.tileentity.getEnergyusage();
+
+        if (obstructed||outofpower){
+            return "gui.imgtmachine.error";
         }
+        else return "gui.imgtmachine.ok";
+
     }
 
     @Override
@@ -76,7 +123,7 @@ public class guiDimensionBridge extends GuiContainer {
         this.drawTexturedModalRect(this.guiLeft+28,this.guiTop+41,176,11,b+1,20);
 
         int p = this.getStoredPowerScaled(71);
-        this.drawTexturedModalRect(this.guiLeft+157, this.guiTop+6, 176, 31, 10, 71-p);
+        this.drawTexturedModalRect(this.guiLeft+157, this.guiTop+6, 176, 31, 10, 72-p);
 
         if (obstructed||outofpower){
             this.drawTexturedModalRect(this.guiLeft+119, this.guiTop+56, 186, 58, 20, 20);
